@@ -57,6 +57,7 @@ footer {
     border: 3px solid #BABB9F;
     border-radius: 10%;
     background-color: black;
+    background-size: cover;
 }
 
 #rps-outcome-display {
