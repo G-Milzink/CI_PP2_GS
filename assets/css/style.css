@@ -26,6 +26,11 @@ footer {
     bottom: 0;
 }
 
+.header-link {
+    width: 200px;
+    height: 100px;
+}
+
 /* index.html specific styling */
 #greeting {
     position: relative;
