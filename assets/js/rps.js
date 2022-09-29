@@ -65,6 +65,9 @@ function rpsAwaitUserInput(){
     }
 }
 
+/**
+ * Generate selection for "ai-opponent" and assign correct image to relevant HTML element.
+ */
 function rpsAiInput(){
     let choice = Math.floor(Math.random()* 3 + 1);
     if (document.getElementById("rps-outcome-display").textContent === "Go!"){
