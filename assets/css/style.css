@@ -27,8 +27,9 @@ footer {
 }
 
 .header-link {
-    width: 200px;
-    height: 100px;
+    width: 160px;
+    height: 80px;
+    margin-top: 15px;
 }
 
 #footer-form-link {
