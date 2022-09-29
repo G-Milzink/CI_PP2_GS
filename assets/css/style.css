@@ -12,6 +12,7 @@ body {
     background-color: #4A4A4A;
     color: #BABB9F;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 header, footer {
@@ -31,6 +32,5 @@ footer {
     width: 50vw;
     height: calc(100vh-220px);
     margin: 120px auto 0 auto;
-    text-align: center;
     font-size: 300%;
 }
