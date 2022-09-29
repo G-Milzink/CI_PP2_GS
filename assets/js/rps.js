@@ -20,8 +20,8 @@ function rpsGame(){
  * Set countdown duration and start countdown loop.
  */
 function rpsBegin(){
-    document.getElementById("ai-choice").style.backgroundImage = "assets/images/rps/rock.png";
-    document.getElementById("player-choice").style.backgroundImage = "assets/images/rps/paper.png";
+    document.getElementById("ai-choice").style.backgroundImage = "";
+    document.getElementById("player-choice").style.backgroundImage = "";
     document.getElementById("rps-outcome-display").textContent = 3;
     rpsCountdownTimer = setInterval(rpsCountdown,1000);
 }
