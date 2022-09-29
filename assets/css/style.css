@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4A4A4A;
+    color: #BABB9F;
+}
+
+header, footer {
+    background-color: #BABB9F;
+    height: 110px;
+    position: fixed;
+    width: 100vw;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+#greeting {
+    position: relative;
+    top: 110px;
+    text-align: center;
+    width: 30vw;
+    height: calc(100vh-220px);
+    margin: 0 auto 0 auto;
+}
