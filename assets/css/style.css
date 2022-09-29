@@ -109,6 +109,11 @@ footer {
     border-radius: 5%;
 }
 
+#rps-start:active {
+    background-color: yellow;
+    border-color: #4A4A4A;
+}
+
 #rps-wins {
     color: #15C400;
     float: right;
