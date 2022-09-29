@@ -1,14 +1,16 @@
 document.addEventListener("DOMContentLoaded", rpsGame);
 
+var rpsCountdownTimer;
+var rpsPlayerChoice;
+var rpsAIChoice;
+var rpsLoseCounter = 0;
+var rpsWinCounter = 0;
+
 /**
  * Main "game-loop", called after loading the DOM
  * waits for user input then starts rps game.
  */
 function rpsGame(){
-    let rpsCountdownTimer;
-    let rpsPlayerChoice;
-    let rpsAIChoice;
-
     document.getElementById("rps-start").addEventListener("click", rpsBegin);
 }
 
@@ -28,7 +30,6 @@ function rpsBegin(){
  */
  function rpsCountdown(){
     let msg = document.getElementById("rps-outcome-display").textContent;
-    console.log(msg);
     if (msg >= 2){
          document.getElementById("rps-outcome-display").textContent = --msg;
     } else {
@@ -74,16 +75,39 @@ function rpsAiInput(){
         if (choice === 1){
             document.getElementById("rps-outcome-display").textContent = "...";
             document.getElementById("ai-choice").style.backgroundImage = "url(assets/images/rps/rock.png)";
-            rockPaperScissorsAiChoice = 0;
+            rpsAiChoice = 0;
         } else if (choice === 2){
-            document.getElementById("countdown").textContent = "...";
+            document.getElementById("rps-outcome-display").textContent = "...";
             document.getElementById("ai-choice").style.backgroundImage = "url(assets/images/rps/paper.png)";
-            rockPaperScissorsAiChoice = 1;
+            rpsAiChoice = 1;
         } else if (choice === 3){
-            document.getElementById("countdown").textContent = "...";
+            document.getElementById("rps-outcome-display").textContent = "...";
             document.getElementById("ai-choice").style.backgroundImage = "url(assets/images/rps/scissors.png)";
-            rockPaperScissorsAiChoice = 2;
+            rpsAiChoice = 2;
         } 
     }
-    // decideRound();
+    rpsDecideRound();
+}
+
+/**
+ * compare player and "ai" selections to outcomeTable (2d-array) and retrieve outcome.
+ * W.I.P.
+ */
+ function rpsDecideRound(){
+    const outcomeTable = [];
+    outcomeTable[0] = ["DRAW", "WIN", "LOSE"];
+    outcomeTable[1] = ["LOSE", "DRAW", "WIN"];
+    outcomeTable[2] = ["WIN", "LOSE", "DRAW"];
+
+    document.getElementById("rps-outcome-display").textContent = outcomeTable[rpsAiChoice][rpsPlayerChoice];
+    console.log(outcomeTable[rpsAiChoice][rpsPlayerChoice]);
+    console.log(rpsLoseCounter);
+    if (outcomeTable[rpsAiChoice][rpsPlayerChoice] === "LOSE") {
+        ++rpsLoseCounter;
+        document.getElementById("rps-losses").textContent = `LOSE: ${rpsLoseCounter}`;
+    }
+    if (outcomeTable[rpsAiChoice][rpsPlayerChoice] === "WIN") {
+        ++rpsWinCounter;
+        document.getElementById("rps-wins").textContent = `WIN: ${rpsWinCounter}`;
+    }
 }
