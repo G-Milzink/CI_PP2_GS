@@ -18,19 +18,19 @@
         </div>
     </header>
     <div id="rps-game-area">
-        <h1>Rock Paper<br>Scissors</h1>
-        <div id="ai-choice"></div>
-        <div id="rps-display"></div>
-        <div id="player-choice"></div>
+        <h1 id="rps-heading">Rock Paper<br>Scissors</h1>
+        <div id="ai-choice" class="choice-display"></div>
+        <div id="rps-outcome-display">READY</div>
+        <div id="player-choice" class="choice-display"></div>
         <div id="rps-selection-area">
-            <span class="rps-selection"></span>
-            <span class="rps-selection"></span>
-            <span class="rps-selection"></span>
+            <span class="rps-selection">R</span>
+            <span class="rps-selection">P</span>
+            <span class="rps-selection">S</span>
         </div>
-        <div>
-            <span><h2>LOSE: 0</h2></span>
-            <span><button>START</button></span>
-            <span><h2>WIN: 1</h2></span>
+        <div id="win-start-lose">
+            <span><h2 id="losses">LOSE: 0</h2></span>
+            <span><button id="rps-start">START</button></span>
+            <span><h2 id="wins">WIN: 1</h2></span>
         </div>
     </div>
     <footer>

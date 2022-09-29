@@ -44,3 +44,55 @@ footer {
     margin: 20vh auto 0 auto;
     font-size: 300%;
 }
+
+/* rps.html specific styling */
+#rps-heading {
+    font-size: 300%;
+}
+
+.choice-display {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 0 auto;
+    border: 3px solid #BABB9F;
+    border-radius: 5%;
+    background-color: black;
+}
+
+#rps-outcome-display {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+#rps-selection {
+    width: 50px;
+    height: 50px;
+}
+
+#win-start-lose {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+}
+
+#losses {
+    color: #FF0000;
+    float: left;
+    margin: 10px;
+}
+
+#rps-start {
+    width: 100px;
+    font-size: 140%;
+    font-weight: bold;
+    margin: 10px;
+    background-color: #BABB9F;
+    color: #4A4A4A;
+    border: 3px solid #BABB9F;
+    border-radius: 5%;
+}
+
+#wins {
+    color: #15C400;
+    float: right;
+    margin: 10px;
+}
