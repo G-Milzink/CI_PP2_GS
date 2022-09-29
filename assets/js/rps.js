@@ -5,7 +5,7 @@ var rpsAIChoice;
 var rpsLoseCounter = 0;
 var rpsWinCounter = 0;
 
-// Wait for DOM to load then run main "game loop":
+// Wait for DOM to load then run main "game-loop":
 document.addEventListener("DOMContentLoaded", rpsGame);
 
 /**
@@ -27,7 +27,7 @@ function rpsBegin(){
 }
 
 /**
- * countdown to 0 == Go!
+ * countdown to 0 then Go!
  * clear timer and move on to accept user input.
  */
  function rpsCountdown(){
