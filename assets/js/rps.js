@@ -1,10 +1,12 @@
-document.addEventListener("DOMContentLoaded", rpsGame);
-
+// Declare global variables:
 var rpsCountdownTimer;
 var rpsPlayerChoice;
 var rpsAIChoice;
 var rpsLoseCounter = 0;
 var rpsWinCounter = 0;
+
+// Wait for DOM to load then run main "game loop":
+document.addEventListener("DOMContentLoaded", rpsGame);
 
 /**
  * Main "game-loop", called after loading the DOM
