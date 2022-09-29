@@ -51,8 +51,8 @@ footer {
 }
 
 .choice-display {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     margin: 0 auto 0 auto;
     border: 3px solid #BABB9F;
     border-radius: 10%;
@@ -71,15 +71,18 @@ footer {
 }
 
 .rps-selection {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
 
     margin: 10px 5px;
+
+    background-color: #4A4A4A;
+    color: #BABB9F;
+    border: 3px solid #BABB9F;
+    border-radius: 5%;
+    font-weight: bold;
 }
 
-#rock-button {
-    background-image: ;
-}
 
 #rps-win-start-lose {
     width: 320px;
