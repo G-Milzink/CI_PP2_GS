@@ -5,7 +5,9 @@ document.addEventListener("DOMContentLoaded", rpsGame);
  * waits for user input then starts rps game.
  */
 function rpsGame(){
-    var rpsCountdownTimer;
+    let rpsCountdownTimer;
+    let rpsPlayerChoice;
+    let rpsAIChoice;
 
     document.getElementById("rps-start").addEventListener("click", rpsBegin);
 }
@@ -48,17 +50,37 @@ function rpsAwaitUserInput(){
         selector.addEventListener("click", function(){
             if (document.getElementById("rps-outcome-display").textContent === "Go!" && this.getAttribute("data-type") === "rock"){
                 document.getElementById("player-choice").style.backgroundImage = "url(assets/images/rps/rock.png)";
-                console.log("0");
-                // aiInput();
+                rpsPlayerChoice = 0;
+                rpsAiInput();
             } else if (document.getElementById("rps-outcome-display").textContent === "Go!" && this.getAttribute("data-type") === "paper"){
                 document.getElementById("player-choice").style.backgroundImage = "url(assets/images/rps/paper.png)";
-                console.log("1");
-                // aiInput();
+                rpsPlayerChoice = 1;
+                rpsAiInput();
             } else if (document.getElementById("rps-outcome-display").textContent === "Go!" && this.getAttribute("data-type") === "scissors"){
                 document.getElementById("player-choice").style.backgroundImage = "url(assets/images/rps/scissors.png)";
-                console.log("2");
-                // aiInput();
+                rpsPlayerChoice = 2;
+                rpsAiInput();
             } 
         })
     }
+}
+
+function rpsAiInput(){
+    let choice = Math.floor(Math.random()* 3 + 1);
+    if (document.getElementById("rps-outcome-display").textContent === "Go!"){
+        if (choice === 1){
+            document.getElementById("rps-outcome-display").textContent = "...";
+            document.getElementById("ai-choice").style.backgroundImage = "url(assets/images/rps/rock.png)";
+            rockPaperScissorsAiChoice = 0;
+        } else if (choice === 2){
+            document.getElementById("countdown").textContent = "...";
+            document.getElementById("ai-choice").style.backgroundImage = "url(assets/images/rps/paper.png)";
+            rockPaperScissorsAiChoice = 1;
+        } else if (choice === 3){
+            document.getElementById("countdown").textContent = "...";
+            document.getElementById("ai-choice").style.backgroundImage = "url(assets/images/rps/scissors.png)";
+            rockPaperScissorsAiChoice = 2;
+        } 
+    }
+    // decideRound();
 }
