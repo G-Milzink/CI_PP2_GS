@@ -36,8 +36,6 @@ function rpsBegin(){
          document.getElementById("rps-outcome-display").textContent = --msg;
     } else {
         document.getElementById("rps-outcome-display").textContent = "Go!";
-    }
-    if (document.getElementById("rps-outcome-display").textContent === "Go!"){
         clearInterval(rpsCountdownTimer);
         rpsAwaitUserInput();
     }
@@ -93,7 +91,7 @@ function rpsAiInput(){
 
 /**
  * compare player and "ai" selections to outcomeTable (2d-array) and retrieve outcome.
- * W.I.P.
+ * Display outcome for player and update score counters.
  */
  function rpsDecideRound(){
     const outcomeTable = [];
