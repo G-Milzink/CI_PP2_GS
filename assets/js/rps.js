@@ -38,6 +38,10 @@ function rpsBegin(){
     }
 }
 
+/**
+ * Check if countdown is at "Go!", if so accept user input,
+ * set player choice display to appropriate image and aply ai-choice.
+ */
 function rpsAwaitUserInput(){
     let selectors = document.getElementsByClassName("rps-selection");
     for (selector of selectors){
