@@ -110,3 +110,11 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
             }
     }
 }
+
+/**
+ * Assign chosen answer to global vaiable.
+ */
+ function selectAnswer(){
+    quizzitGlobalVariables.CHOSEN_ANSWER = this.textContent;
+    quizzitGlobalVariables.ALLOW_SUBMIT = true;
+}
