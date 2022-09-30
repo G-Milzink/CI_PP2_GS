@@ -102,7 +102,7 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
     let randomButton = `answer-${rand+1}`;
     let buttons = document.getElementsByClassName("answer-button");
     for (button of buttons){
-            button.style.color = "#4A4A4A";
+            button.style.color = "#BABB9F";
             if (button.getAttribute("data-type") === randomButton){
                 button.textContent = correctAnswer;    
             } else {
@@ -130,6 +130,7 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
             document.getElementById("quizzit-correct").textContent = "Correct: " + quizzitGlobalVariables.SCORE;
             document.getElementById("riddle-display").textContent = "Congratulations! You are correct."
             for (button of BUTTONS){
+                button.style.color = "#15C400";
                     button.textContent = " :) "
             }
     } else if(quizzitGlobalVariables.ALLOW_SUBMIT) {
