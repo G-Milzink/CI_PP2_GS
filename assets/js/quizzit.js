@@ -25,19 +25,21 @@ const quizzitGlobalVariables = {
     "ALLOW_SUBMIT" : ''
 }
 
-// Assign randomized values to global variables.
+// Assign randomized values to 'global' variables.
 quizzitGlobalVariables.RANDOMIZED_RIDDLES = generateListOfRiddles(RIDDLES);
 quizzitGlobalVariables.RANDOMIZED_ANSWERS = generateListOfAnswers(FALSE_ANSWERS);
 quizzitGlobalVariables.ALLOW_SUBMIT = false;
 
-// Listen for user input.
+// Listen for user input: (riddle-me button loads a new riddle).
 document.getElementById("riddle-me").addEventListener("click",riddleSelection);
 
-const BUTTONS = document.getElementsByClassName("answer-button");
+//Assign anser-buttons to global array
+const BUTTONS = document.getElementsByClassName("answer-button"); 
 for (button of BUTTONS){
         button.addEventListener("click", selectAnswer);
 }
 
+// Listen for user input: (submit button submits answer for evaluation ONLY IF an answer has been selected).
 document.getElementById("answer-submit-button").addEventListener("click",submitAnswer);
 
 /**
