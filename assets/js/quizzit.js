@@ -37,3 +37,33 @@ const BUTTONS = document.getElementsByClassName("answer-button");
 for (button of BUTTONS){
         button.addEventListener("click", selectAnswer);
 }
+
+document.getElementById("answer-submit-button").addEventListener("click",submitAnswer);
+
+/**
+ * Generate a array of random numbers equal in length to the number of riddles available.
+ * The list is used to randomize the order of questions for each game.
+ * @returns randomized array of numbers.
+ */
+ function generateListOfRiddles(_array){
+    let generated = [];
+    for (i = 0; i < _array.length; i++){
+            generated[i] = i;
+    }
+    generated.sort(() => Math.random() - 0.5);
+    return generated;
+}
+
+/**
+ * Generate a array of random numbers equal in length to the number of false answers available.
+ * The list is used to randomize the false answers presented for each game.
+ * @returns randomized array of numbers.
+ */
+ function generateListOfAnswers(_array){
+    let generated = [];
+    for (i = 0; i < _array.length; i++){
+            generated[i] = i;
+    }
+    generated.sort(() => Math.random() - 0.5);
+    return generated;
+}
