@@ -67,3 +67,27 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
     generated.sort(() => Math.random() - 0.5);
     return generated;
 }
+
+/**
+ * Select riddle according to randomized list and remove current selection from list
+ */
+ function riddleSelection(){
+    document.getElementById("riddle-display").style.color = "greenyellow";
+    var answer;
+    if (quizzitGlobalVariables.RANDOMIZED_RIDDLES.length > 0) {
+            document.getElementById("riddle-display").textContent = RIDDLES[quizzitGlobalVariables.RANDOMIZED_RIDDLES[0]][0];
+            answer = RIDDLES[quizzitGlobalVariables.RANDOMIZED_RIDDLES[0]][1];
+            quizzitGlobalVariables.CORRECT_ANSWER = answer;
+            quizzitGlobalVariables.RANDOMIZED_RIDDLES.shift();
+            randomizeButton(answer);
+    } else {
+            quizzitGlobalVariables.RANDOMIZED_RIDDLES = generateListOfRiddles(RIDDLES);
+            quizzitGlobalVariables.RANDOMIZED_ANSWERS = generateListOfAnswers(FALSE_ANSWERS);
+            document.getElementById("riddle-display").textContent = ".......?";
+            let buttons = document.getElementsByClassName("answer-button");
+            for (button of buttons){
+                    button.textContent = "...";
+            }
+            alert("You have answered all our riddles!");
+    } 
+}
