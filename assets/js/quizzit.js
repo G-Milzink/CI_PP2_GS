@@ -29,3 +29,11 @@ const quizzitGlobalVariables = {
 quizzitGlobalVariables.RANDOMIZED_RIDDLES = generateListOfRiddles(RIDDLES);
 quizzitGlobalVariables.RANDOMIZED_ANSWERS = generateListOfAnswers(FALSE_ANSWERS);
 quizzitGlobalVariables.ALLOW_SUBMIT = false;
+
+// Listen for user input.
+document.getElementById("riddle-me").addEventListener("click",riddleSelection);
+
+const BUTTONS = document.getElementsByClassName("answer-button");
+for (button of BUTTONS){
+        button.addEventListener("click", selectAnswer);
+}
