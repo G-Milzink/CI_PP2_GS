@@ -121,3 +121,9 @@ footer {
     float: right;
     font-size: 160%;
 }
+
+/* Quizzit specific styling */
+
+#quizzit-heading {
+    font-size: 300%;
+}

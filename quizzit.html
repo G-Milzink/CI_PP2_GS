@@ -18,10 +18,35 @@
         </div>
     </header>
     <div id="quizzit-game-area">
-        <h1 id="rps-heading">Quizzit!</h1>
+        <h1 id="quizzit-heading">Quizzit!</h1>
+    </div>
+    <div>
+        <button id="riddle-me">Riddle me!</button>
+    </div>
+    <div>
+        <h2 id="riddle-display">.......?</h2>
+    </div>
+    <div id="answer-section">
+        <div>
+            <span><button class="answer-button" data-type="answer-1">...</button></span>
+            <span><button class="answer-button" data-type="answer-2">...</button></span>
+            <div></div>
+            <span><button class="answer-button" data-type="answer-3">...</button></span>
+            <span><button class="answer-button" data-type="answer-4">...</button></span>
+        </div>
+        <div>
+            <button id="answer-submit-button">SUBMIT</button>
+        </div>
+    </div>
+    <div id="score-section">
+        <h3 id="quizzit-score">Correct: 0</h3>
+        <h3 id="quizzit-wrong">Wrong: 0</h3>
     </div>
     <footer>
         <a href="form.html"><img src="assets/images/logos/contact_logo.png" alt="An image of an ink-jar and feather" id="footer-form-link"></a>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/quizzit.js"></script>
 </body>
 </html>
