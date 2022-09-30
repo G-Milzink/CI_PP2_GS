@@ -146,6 +146,11 @@ footer {
     border-radius: 5%;
 }
 
+#riddle-me:active {
+    background-color: white;
+    border-color: yellow;
+}
+
 #riddle-display {
     font-size: 200%;
     max-width: 50%;

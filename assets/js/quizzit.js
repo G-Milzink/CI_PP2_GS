@@ -72,7 +72,8 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
  * Select riddle according to randomized list and remove current selection from list
  */
  function riddleSelection(){
-    document.getElementById("riddle-display").style.color = "greenyellow";
+    document.getElementById("riddle-display").style.color = "#BABB9F";
+    
     var answer;
     if (quizzitGlobalVariables.RANDOMIZED_RIDDLES.length > 0) {
             document.getElementById("riddle-display").textContent = RIDDLES[quizzitGlobalVariables.RANDOMIZED_RIDDLES[0]][0];
@@ -101,7 +102,7 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
     let randomButton = `answer-${rand+1}`;
     let buttons = document.getElementsByClassName("answer-button");
     for (button of buttons){
-            button.style.color = "greenyellow";
+            button.style.color = "#4A4A4A";
             if (button.getAttribute("data-type") === randomButton){
                 button.textContent = correctAnswer;    
             } else {
@@ -126,14 +127,14 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
  function submitAnswer(){
     if (quizzitGlobalVariables.CHOSEN_ANSWER === quizzitGlobalVariables.CORRECT_ANSWER && quizzitGlobalVariables.ALLOW_SUBMIT){
             ++quizzitGlobalVariables.SCORE;
-            document.getElementById("score").textContent = "Correct: " + quizzitGlobalVariables.SCORE;
+            document.getElementById("quizzit-correct").textContent = "Correct: " + quizzitGlobalVariables.SCORE;
             document.getElementById("riddle-display").textContent = "Congratulations! You are correct."
             for (button of BUTTONS){
                     button.textContent = " :) "
             }
     } else if(quizzitGlobalVariables.ALLOW_SUBMIT) {
             ++quizzitGlobalVariables.WRONG;
-            document.getElementById("wrong").textContent = "Mistaken: " + quizzitGlobalVariables.WRONG;
+            document.getElementById("quizzit-wrong").textContent = "Mistaken: " + quizzitGlobalVariables.WRONG;
             document.getElementById("riddle-display").textContent = "Sorry! You are mistaken.";
             document.getElementById("riddle-display").style.color = "red";
             for (button of BUTTONS){
