@@ -100,7 +100,7 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
     let rand = Math.floor(Math.random()*3);
     let randomButton = `answer-${rand+1}`;
     let buttons = document.getElementsByClassName("answer-button");
-    for (button of BUTTONS){
+    for (button of buttons){
             button.style.color = "greenyellow";
             if (button.getAttribute("data-type") === randomButton){
                 button.textContent = correctAnswer;    
@@ -117,4 +117,29 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
  function selectAnswer(){
     quizzitGlobalVariables.CHOSEN_ANSWER = this.textContent;
     quizzitGlobalVariables.ALLOW_SUBMIT = true;
+}
+
+/**
+ * Check if answer is correct and if riddle has not been answered yet prcess
+ * answer and update win/lose tally.
+ */
+ function submitAnswer(){
+    if (quizzitGlobalVariables.CHOSEN_ANSWER === quizzitGlobalVariables.CORRECT_ANSWER && quizzitGlobalVariables.ALLOW_SUBMIT){
+            ++quizzitGlobalVariables.SCORE;
+            document.getElementById("score").textContent = "Correct: " + quizzitGlobalVariables.SCORE;
+            document.getElementById("riddle-display").textContent = "Congratulations! You are correct."
+            for (button of BUTTONS){
+                    button.textContent = " :) "
+            }
+    } else if(quizzitGlobalVariables.ALLOW_SUBMIT) {
+            ++quizzitGlobalVariables.WRONG;
+            document.getElementById("wrong").textContent = "Mistaken: " + quizzitGlobalVariables.WRONG;
+            document.getElementById("riddle-display").textContent = "Sorry! You are mistaken.";
+            document.getElementById("riddle-display").style.color = "red";
+            for (button of BUTTONS){
+                    button.style.color = "red";
+                    button.textContent = " :( ";
+            }
+    }
+    quizzitGlobalVariables.ALLOW_SUBMIT = false;
 }
