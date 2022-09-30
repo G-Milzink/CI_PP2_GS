@@ -13,3 +13,14 @@ const FALSE_ANSWERS = ["A Tree", "A Cloud", "A Journey",
                                 "A Vision", "A Lake", "An Egg",
                                 "The Grass", "The Ground", "A Sword"
 ];
+
+// Wrap variables in named object to avoid global scope.
+const quizzitGlobalVariables = {
+    "RANDOMIZED_RIDDLES" : '',
+    "RANDOMIZED_ANSWERS" : '',
+    "CORRECT_ANSWER" : '',
+    "CHOSEN_ANSWER" : '',
+    "SCORE" : '0',
+    "WRONG" : '0',
+    "ALLOW_SUBMIT" : ''
+}
