@@ -134,7 +134,7 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
             }
     } else if(quizzitGlobalVariables.ALLOW_SUBMIT) {
             ++quizzitGlobalVariables.WRONG;
-            document.getElementById("quizzit-wrong").textContent = "Mistaken: " + quizzitGlobalVariables.WRONG;
+            document.getElementById("quizzit-wrong").textContent = "Wrong: " + quizzitGlobalVariables.WRONG;
             document.getElementById("riddle-display").textContent = "Sorry! You are mistaken.";
             document.getElementById("riddle-display").style.color = "red";
             for (button of BUTTONS){
