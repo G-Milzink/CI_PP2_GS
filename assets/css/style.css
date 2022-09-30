@@ -127,3 +127,17 @@ footer {
 #quizzit-heading {
     font-size: 300%;
 }
+
+#riddle-me {
+    width: fit-content;
+    height: 30px;
+    margin-right: 12px;
+
+    font-size: 130%;
+    font-weight: bold;
+
+    background-color: #BABB9F;
+    color: #4A4A4A;
+    border: 3px solid #BABB9F;
+    border-radius: 5%;
+}
