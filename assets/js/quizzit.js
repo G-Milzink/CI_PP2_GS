@@ -91,3 +91,22 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
             alert("You have answered all our riddles!");
     } 
 }
+
+/**
+ * Randomize the button that displays the correct answer.
+ * Populate other buttons with flase answers.
+ */
+ function randomizeButton(correctAnswer){
+    let rand = Math.floor(Math.random()*3);
+    let randomButton = `answer-${rand+1}`;
+    let buttons = document.getElementsByClassName("answer-button");
+    for (button of BUTTONS){
+            button.style.color = "greenyellow";
+            if (button.getAttribute("data-type") === randomButton){
+                button.textContent = correctAnswer;    
+            } else {
+                    button.textContent = FALSE_ANSWERS[quizzitGlobalVariables.RANDOMIZED_ANSWERS[0]];
+                    quizzitGlobalVariables.RANDOMIZED_ANSWERS.shift();
+            }
+    }
+}
