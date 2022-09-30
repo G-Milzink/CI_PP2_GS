@@ -24,3 +24,8 @@ const quizzitGlobalVariables = {
     "WRONG" : '0',
     "ALLOW_SUBMIT" : ''
 }
+
+// Assign randomized values to global variables.
+quizzitGlobalVariables.RANDOMIZED_RIDDLES = generateListOfRiddles(RIDDLES);
+quizzitGlobalVariables.RANDOMIZED_ANSWERS = generateListOfAnswers(FALSE_ANSWERS);
+quizzitGlobalVariables.ALLOW_SUBMIT = false;
