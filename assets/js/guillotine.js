@@ -53,3 +53,22 @@ function buildAnswerDisplay(){
         display.innerHTML += `<p class="answer" id="pos`+i+`">_</p>`;
     }   
 }
+
+function listenToKeyboard(){
+    let keyboard = document.getElementsByClassName("keys");
+    for (keys of keyboard){
+        keys.addEventListener("click", function(){
+            let answer = guillotineGlobalVariables.answer;
+            let letter = this.getAttribute("data-type");
+            if (answer.includes(letter)){
+                this.style.backgroundColor = "slategray";
+                positions = (guessCorrect(letter,answer));
+                for (i of positions){
+                    document.getElementById("pos"+i).textContent = letter;
+                }
+            } else {
+                this.style.backgroundColor = "#162525";
+            }
+        })
+    }
+}
