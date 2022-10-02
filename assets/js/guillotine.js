@@ -1,7 +1,9 @@
 // Names object to contain "global" variables:
 const guillotineGlobalVariables = {
     "answer" : '',
-    "wrongGuesses" : 0
+    "wrongGuesses" : 0,
+    "loseCounter" : 0,
+    "winCounter" : 0
 }
 
 // Wait for the DOM to load, then execute main game function:
@@ -92,13 +94,13 @@ function guessCorrect(letter,answer){
             position.push(i+1);
         }
     }
+    ++guillotineGlobalVariables.winCounter;
+    document.getElementById("guillotine-losses").textContent = `LOSE: ${guillotineGlobalVariables.winCounter}`;
     return position;
 }
 
 function guessWrong(){
     ++guillotineGlobalVariables.wrongGuesses;
-    console.log(guillotineGlobalVariables.wrongGuesses)
-
     switch(guillotineGlobalVariables.wrongGuesses){
         case 1:
             document.getElementById("guillotine-display").src = "assets/images/guillotine/1.png";
@@ -117,6 +119,8 @@ function guessWrong(){
             break;
         case 6:
             document.getElementById("guillotine-display").src = "assets/images/guillotine/6.png";
+            ++guillotineGlobalVariables.loseCounter;
+            document.getElementById("guillotine-losses").textContent = `LOSE: ${guillotineGlobalVariables.loseCounter}`;
             break; 
     }
 }
