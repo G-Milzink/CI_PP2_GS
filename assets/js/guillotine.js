@@ -61,13 +61,13 @@ function listenToKeyboard(){
             let answer = guillotineGlobalVariables.answer;
             let letter = this.getAttribute("data-type");
             if (answer.includes(letter)){
-                this.style.backgroundColor = "slategray";
+                this.style.backgroundColor = "#747474";
                 positions = (guessCorrect(letter,answer));
                 for (i of positions){
                     document.getElementById("pos"+i).textContent = letter;
                 }
             } else {
-                this.style.backgroundColor = "#162525";
+                this.style.backgroundColor = "#272626";
             }
         })
     }
