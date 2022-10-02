@@ -297,3 +297,14 @@ footer {
     float: right;
     font-size: 160%;
 }
+
+/* 404 specific styling */
+#error-404 {
+    font-size: 500%;
+    margin: 50px auto 10px auto;
+}
+
+.msg-404 {
+    font-size: 200%;
+    margin: 0 auto 0 auto;
+}
