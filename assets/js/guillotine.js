@@ -27,6 +27,9 @@ function grabRandomWord(){
     return word;
 }
 
+/**
+ * Generates HTML for keyboard section and populates with the letters of the alphabet.
+ */
 function buildKeyboard(){
     let keyboard = document.getElementById("keyboard");
     let alphabet = "ABCDEFGHJIKLMNOPQRSTUVWXYZ";
