@@ -301,7 +301,7 @@ footer {
 /* 404 specific styling */
 #error-404 {
     font-size: 600%;
-    margin: 25vh auto 10px auto;
+    margin: 20vh auto 10px auto;
 }
 
 .msg-404 {
