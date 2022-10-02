@@ -15,3 +15,14 @@ function runGuillotineGame(){
     buildAnswerDisplay()
     listenToKeyboard()
 }
+
+/**
+ * Picks a random word from a pre-made array of words.
+ * @returns Array containing all letters of random words as seperate values.
+ */
+function grabRandomWord(){
+    const WORDS = ["ABSOLUTE", "BATHROOM", "CHAMPION", "DATABASE"];
+    let rand = Math.floor(Math.random()*WORDS.length);
+    let word = Array.from(WORDS[rand]);
+    return word;
+}
