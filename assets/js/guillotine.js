@@ -54,6 +54,10 @@ function buildAnswerDisplay(){
     }   
 }
 
+/**
+ * Listen for user input, check if chosenletter is included in answer and execute
+ * relevant function.
+ */
 function listenToKeyboard(){
     let keyboard = document.getElementsByClassName("keys");
     for (keys of keyboard){
