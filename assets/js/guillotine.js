@@ -2,6 +2,7 @@
 const guillotineGlobalVariables = {
     "answer" : '',
     "wrongGuesses" : 0,
+    "correctGuesses" : 0,
     "loseCounter" : 0,
     "winCounter" : 0
 }
@@ -72,12 +73,22 @@ function listenToKeyboard(){
                 positions = (guessCorrect(letter,answer));
                 for (i of positions){
                     document.getElementById("pos"+i).textContent = letter;
+                    incrementCorrectGuesses();
                 }
             } else {
                 guessWrong();
                 this.style.backgroundColor = "#272626";
             }
         })
+    }
+}
+
+function incrementCorrectGuesses(){
+    ++guillotineGlobalVariables.correctGuesses;
+    console.log(guillotineGlobalVariables.correctGuesses);
+    console.log(guillotineGlobalVariables.answer.length);
+    if (guillotineGlobalVariables.correctGuesses === guillotineGlobalVariables.answer.length){
+        alert("You survive...to opress the peasants one more day!")
     }
 }
 
@@ -94,8 +105,6 @@ function guessCorrect(letter,answer){
             position.push(i+1);
         }
     }
-    ++guillotineGlobalVariables.winCounter;
-    document.getElementById("guillotine-losses").textContent = `LOSE: ${guillotineGlobalVariables.winCounter}`;
     return position;
 }
 
@@ -121,6 +130,7 @@ function guessWrong(){
             document.getElementById("guillotine-display").src = "assets/images/guillotine/6.png";
             ++guillotineGlobalVariables.loseCounter;
             document.getElementById("guillotine-losses").textContent = `LOSE: ${guillotineGlobalVariables.loseCounter}`;
+            alert("Vive La Revolution!")
             break; 
     }
 }
