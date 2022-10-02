@@ -314,6 +314,7 @@ footer {
     color: #4A4A4A;
     border: 3px solid #BABB9F;
     border-radius: 5%;
+    margin-top: 25px;
 }
 
 #riddle-me:active {
