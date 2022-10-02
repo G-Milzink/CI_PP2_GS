@@ -220,20 +220,21 @@ footer {
 #guillotine-display {
     width: 250px;
     height: 250px;
-    margin: 25px auto 25px auto;
+    margin: 5px auto 5px auto;
     border: 3px solid #BABB9F;
     border-radius: 5%;
     background-color: #272626;
     background-size: cover;
 }
 
-
-
+#answer-display{
+    margin-top: 5px;
+}
 
 #keyboard {
     width: 40vw;
     min-width: 280px;
-    margin: 50px auto 0 auto;
+    margin: 20px auto 0 auto;
 }
 
 .keys {
@@ -249,4 +250,12 @@ footer {
 
 .keys:active {
     background-color: #747474;
+}
+
+.answer {
+    font-size: 200%;
+    font-weight: bold;
+    display: inline;
+    margin: 5px;
+    text-transform: capitalize;
 }
