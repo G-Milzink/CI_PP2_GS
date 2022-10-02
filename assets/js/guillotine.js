@@ -21,7 +21,7 @@ function runGuillotineGame(){
  * @returns Array containing all letters of random words as seperate values.
  */
 function grabRandomWord(){
-    const WORDS = ["ABSOLUTE", "BATHROOM", "CHAMPION", "DATABASE"];
+    const WORDS = ["ABSOLUTE", "BATHROOM", "CHAMPION", "DATABASE","BANANAS", "BICYCLE", "RESTAURANT", "DOLPHIN"];
     let rand = Math.floor(Math.random()*WORDS.length);
     let word = Array.from(WORDS[rand]);
     return word;
