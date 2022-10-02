@@ -85,6 +85,9 @@ function listenToKeyboard(){
     }
 }
 
+/**
+ * Increments invisible counter and counts as a win if all letters have been guessed.
+ */
 function incrementCorrectGuesses(){
     ++guillotineGlobalVariables.correctGuesses;
     console.log(guillotineGlobalVariables.correctGuesses);
@@ -112,6 +115,10 @@ function guessCorrect(letter,answer){
     return position;
 }
 
+/**
+ * Update display to represent number of wrong guesses and determine if lose-condition is reached
+ * (6 wrong guesses ends the game)
+ */
 function guessWrong(){
     ++guillotineGlobalVariables.wrongGuesses;
     switch(guillotineGlobalVariables.wrongGuesses){
@@ -140,6 +147,11 @@ function guessWrong(){
     }
 }
 
+
+/**
+ * Clear keyboard and answer display, reset guess-counters and guillotine-image.
+ * Restart game.
+ */
 function resetGame(){
     document.getElementById("answer-display").innerHTML = "";
     document.getElementById("keyboard").innerHTML = "";
