@@ -1,6 +1,7 @@
 // Names object to contain "global" variables:
 const guillotineGlobalVariables = {
-    "answer" : ''
+    "answer" : '',
+    "wrongGuesses" : 0
 }
 
 // Wait for the DOM to load, then execute main game function:
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", runGuillotineGame);
 /**
  * Main "game-loop"...called after loading the DOM.
  */
-function runGuillotineGame(){   
+function runGuillotineGame(){
     guillotineGlobalVariables.answer = grabRandomWord();
     buildKeyboard();
     buildAnswerDisplay()
@@ -21,7 +22,7 @@ function runGuillotineGame(){
  * @returns Array containing all letters of random words as seperate values.
  */
 function grabRandomWord(){
-    const WORDS = ["ABSOLUTE", "BATHROOM", "CHAMPION", "DATABASE","BANANAS", "BICYCLE", "RESTAURANT", "DOLPHIN"];
+    const WORDS = ["ABSOLUTE", "BATHROOM", "CHAMPION", "DATABASE","BANANAS", "BICYCLE", "RESTAURANT", "DOLPHIN", "SUPERCALIFRAGILISTICEXPIALIDOCIOUS"];
     let rand = Math.floor(Math.random()*WORDS.length);
     let word = Array.from(WORDS[rand]);
     return word;
@@ -71,6 +72,7 @@ function listenToKeyboard(){
                     document.getElementById("pos"+i).textContent = letter;
                 }
             } else {
+                guessWrong();
                 this.style.backgroundColor = "#272626";
             }
         })
@@ -91,4 +93,30 @@ function guessCorrect(letter,answer){
         }
     }
     return position;
+}
+
+function guessWrong(){
+    ++guillotineGlobalVariables.wrongGuesses;
+    console.log(guillotineGlobalVariables.wrongGuesses)
+
+    switch(guillotineGlobalVariables.wrongGuesses){
+        case 1:
+            document.getElementById("guillotine-display").src = "assets/images/guillotine/1.png";
+            break;
+        case 2:
+            document.getElementById("guillotine-display").src = "assets/images/guillotine/2.png";
+            break;
+        case 3:
+            document.getElementById("guillotine-display").src = "assets/images/guillotine/3.png";
+            break;
+        case 4:
+            document.getElementById("guillotine-display").src = "assets/images/guillotine/4.png";
+            break;
+        case 5:
+            document.getElementById("guillotine-display").src = "assets/images/guillotine/5.png";
+            break;
+        case 6:
+            document.getElementById("guillotine-display").src = "assets/images/guillotine/6.png";
+            break; 
+    }
 }
