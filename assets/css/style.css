@@ -210,3 +210,19 @@ footer {
     font-size: 160%;
     margin-top: 10px;
 }
+
+/* Guillotine specific styling: */
+
+#guillotine-heading {
+    font-size: 300%;
+}
+
+#guillotine-display {
+    width: 250px;
+    height: 250px;
+    margin: 25px auto 25px auto;
+    border: 3px solid #BABB9F;
+    border-radius: 5%;
+    background-color: #272626;
+    background-size: cover;
+}
