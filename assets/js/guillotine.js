@@ -76,3 +76,19 @@ function listenToKeyboard(){
         })
     }
 }
+
+/**
+ * Evaluate player guess to determine positions of letter inside answer.
+ * @param {*} letter 
+ * @param {*} answer 
+ * @returns Array containing the positions of the correctly guessed letters as appearing in the answer
+ */
+function guessCorrect(letter,answer){
+    let position = [];
+    for (i = 0; i < answer.length; i++){
+        if (letter === answer[i]){
+            position.push(i+1);
+        }
+    }
+    return position;
+}
