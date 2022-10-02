@@ -40,3 +40,13 @@ function buildKeyboard(){
         keyboard.innerHTML += `<button class="keys" data-type="`+key+`">`+key+`</button>`;
     }
 }
+
+function buildAnswerDisplay(){
+    let display = document.getElementById("answer-display");
+    let wordLength = guillotineGlobalVariables.answer.length;
+    let i = 0;
+    while (i < wordLength){
+        i++;
+        display.innerHTML += `<p class="answer" id="pos`+i+`">_</p>`;
+    }   
+}
