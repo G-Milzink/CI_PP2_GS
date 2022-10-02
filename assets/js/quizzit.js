@@ -131,6 +131,7 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
             ++quizzitGlobalVariables.SCORE;
             document.getElementById("quizzit-correct").textContent = "Correct: " + quizzitGlobalVariables.SCORE;
             document.getElementById("riddle-display").textContent = "Congratulations! You are correct."
+            document.getElementById("riddle-display").style.color = "#15C400";
             for (button of BUTTONS){
                 button.style.color = "#15C400";
                     button.textContent = " :) "
