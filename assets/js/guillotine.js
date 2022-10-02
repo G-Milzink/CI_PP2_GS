@@ -41,6 +41,9 @@ function buildKeyboard(){
     }
 }
 
+/**
+ * Generates html for answer display and assigns a unique ID to each element.
+ */
 function buildAnswerDisplay(){
     let display = document.getElementById("answer-display");
     let wordLength = guillotineGlobalVariables.answer.length;
