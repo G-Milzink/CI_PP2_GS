@@ -22,13 +22,12 @@ const quizzitGlobalVariables = {
     "CHOSEN_ANSWER" : '',
     "SCORE" : '0',
     "WRONG" : '0',
-    "ALLOW_SUBMIT" : ''
+    "ALLOW_SUBMIT" : false,
 }
 
 // Assign randomized values to 'global' variables.
 quizzitGlobalVariables.RANDOMIZED_RIDDLES = generateListOfRiddles(RIDDLES);
 quizzitGlobalVariables.RANDOMIZED_ANSWERS = generateListOfAnswers(FALSE_ANSWERS);
-quizzitGlobalVariables.ALLOW_SUBMIT = false;
 
 // Listen for user input: (riddle-me button loads a new riddle).
 document.getElementById("riddle-me").addEventListener("click",riddleSelection);
@@ -75,7 +74,6 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
  */
  function riddleSelection(){
     document.getElementById("riddle-display").style.color = "#BABB9F";
-    
     var answer;
     if (quizzitGlobalVariables.RANDOMIZED_RIDDLES.length > 0) {
             document.getElementById("riddle-display").textContent = RIDDLES[quizzitGlobalVariables.RANDOMIZED_RIDDLES[0]][0];
