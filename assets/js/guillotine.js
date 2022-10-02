@@ -9,6 +9,8 @@ const guillotineGlobalVariables = {
 
 // Wait for the DOM to load, then execute main game function:
 document.addEventListener("DOMContentLoaded", runGuillotineGame);
+document.getElementById("new-word").addEventListener("click",resetGame);
+
 
 /**
  * Main "game-loop"...called after loading the DOM.
@@ -88,6 +90,8 @@ function incrementCorrectGuesses(){
     console.log(guillotineGlobalVariables.correctGuesses);
     console.log(guillotineGlobalVariables.answer.length);
     if (guillotineGlobalVariables.correctGuesses === guillotineGlobalVariables.answer.length){
+        ++guillotineGlobalVariables.winCounter;
+        document.getElementById("guillotine-wins").textContent = `WIN: ${guillotineGlobalVariables.winCounter}`;
         alert("You survive...to opress the peasants one more day!")
     }
 }
@@ -127,10 +131,25 @@ function guessWrong(){
             document.getElementById("guillotine-display").src = "assets/images/guillotine/5.png";
             break;
         case 6:
+            document.getElementById("guillotine-display").style.border = "3px solid red";
             document.getElementById("guillotine-display").src = "assets/images/guillotine/6.png";
             ++guillotineGlobalVariables.loseCounter;
             document.getElementById("guillotine-losses").textContent = `LOSE: ${guillotineGlobalVariables.loseCounter}`;
             alert("Vive La Revolution!")
             break; 
     }
+}
+
+function resetGame(){
+    document.getElementById("answer-display").innerHTML = "";
+    document.getElementById("keyboard").innerHTML = "";
+    document.getElementById("guillotine-display").style.border = "3px solid #BABB9F";
+
+    guillotineGlobalVariables.wrongGuesses = 0;
+    guillotineGlobalVariables.correctGuesses = 0;
+
+    document.getElementById("guillotine-display").src = "assets/images/guillotine/0.png";
+
+    runGuillotineGame();
+
 }
