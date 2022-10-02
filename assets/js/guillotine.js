@@ -26,3 +26,14 @@ function grabRandomWord(){
     let word = Array.from(WORDS[rand]);
     return word;
 }
+
+function buildKeyboard(){
+    let keyboard = document.getElementById("keyboard");
+    let alphabet = "ABCDEFGHJIKLMNOPQRSTUVWXYZ";
+    let letters = Array.from(alphabet);
+    let i = 0;
+    while (i < letters.length){
+        key = letters[i]; i++;
+        keyboard.innerHTML += `<button class="keys" data-type="`+key+`">`+key+`</button>`;
+    }
+}
