@@ -377,6 +377,12 @@ input, textarea {
             height: 60px;
             margin-bottom: 10px;
         }
+        #greeting {
+            
+            width: 80vw;
+            height: calc(100vh-220px);
+            font-size: 200%;
+        }
         /* rock paper scissors */
         #rps-heading {
             font-size: 180%;
