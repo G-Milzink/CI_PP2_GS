@@ -361,8 +361,8 @@ input, textarea {
 }
 
 /* RESPONSIVE DESIGN */
-    /* HEADER */
     @media screen and (max-width: 500px) {
+        /* header/footer */
         header, footer {
             height: 60px;
             width: 100vw;
@@ -377,6 +377,7 @@ input, textarea {
             height: 60px;
             margin-bottom: 10px;
         }
+        /* rock paper scissors */
         #rps-heading {
             font-size: 180%;
         }
@@ -389,5 +390,38 @@ input, textarea {
             height: 60px;
             font-size: 50%;
         }
-
+        #rps-win-start-lose {
+            font-size: 80%;
+        }
+        #rps-losses {
+            margin-left: 15px;
+        }
+        #rps-wins {
+            margin-right: 15px;
+        }
+        /* quizzit */
+        #quizzit-heading {
+            font-size: 180%;
+        }
+        #riddle-display {
+            font-size: 170%;
+            max-width: 80%;
+            min-height: 275px;
+            margin-left: auto;
+            margin-right: auto;
+            height: fit-content;
+        }
+        #score-section {
+            font-size: 80%;
+        }
+        #quizzit-wrong {
+            margin-left: 5px;
+        }
+        #quizzit-correct {
+            margin-right: 25px;
+        }
+        #answer-submit-button {
+            width: fit-content;
+            margin-left: 15px;
+        }
     }
