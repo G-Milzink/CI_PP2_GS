@@ -424,4 +424,40 @@ input, textarea {
             width: fit-content;
             margin-left: 15px;
         }
+        /* guillotine */
+        #guillotine-heading {
+            font-size: 180%;
+        }
+        
+        #guillotine-display {
+            width: 220px;
+            height: 220px;
+            margin: 0 auto 0 auto;
+        }
+        #guillotine-win-new-lose {
+            font-size: 80%;
+        }
+        #guillotine-losses {
+            margin-left: 25px;
+        }
+        #guillotine-wins {
+            margin-right: 25px;
+        }
+        #new-word {
+            width: fit-content;
+            margin-left: 15px;
+        }
+        .keys {
+            width: 25px;
+            height: 25px;
+            margin: 2.5px;
+        }
+        /* contact */
+        #contact-wrapper {
+            margin: 10px;
+            font-size: 170%;
+        }
+        #send-msg {
+            margin-left: 110px;
+        }
     }
