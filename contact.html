@@ -18,7 +18,7 @@
         </div>
     </header>
     <div id="contact-wrapper">
-        <form action="contact-form">
+        <form id="contact-form">
             <label for="name" class="form-element">Name:</label>
             <input type="text" class="form-element" id="name" name="name" placeholder="name" required>
             
@@ -28,7 +28,7 @@
             <label for="msg" class="form-element">Message:</label>
             <textarea id="msg" class="form-element" name="msg" cols="30" rows="8" placeholder="Leave me a message! :)" required></textarea>
 
-            <button type="submit" id="send-msg" onclick='sendMessage()'>SUBMIT</button>
+            <button type="submit" id="send-msg" onclick="sendMessage()">SUBMIT</button>
         </form>
     </div>
     <footer>
@@ -38,15 +38,12 @@
     <!-- JavaScript -->
     <script src="assets/js/contact.js"></script>
 
-    <!-- EmailJS integration -->
-    <!-- Taken from the emailsJS tutorial -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            emailjs.init("bovvHg1tPmzz8Kd9n");
+            emailjs.init("nHsMv-fGFHGxcKPg5");
         })();
     </script>
-
 </body>
 
 </html>
