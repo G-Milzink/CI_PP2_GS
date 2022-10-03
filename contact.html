@@ -34,7 +34,16 @@
     <footer>
         <a href="contact.html"><img src="assets/images/logos/contact_logo.png" alt="An image of an ink-jar and feather" id="footer-form-link"></a>
     </footer>
+    <!-- JavaScript -->
     <script src="assets/js/contact.js"></script>
+    <!-- EmailJS integration -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('bovvHg1tPmzz8Kd9n');
+        })();
+    </script>
 </body>
 
 </html>
