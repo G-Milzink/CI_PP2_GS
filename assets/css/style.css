@@ -359,3 +359,35 @@ input, textarea {
     border-radius: 3%;
     font-size: 80%;
 }
+
+/* RESPONSIVE DESIGN */
+    /* HEADER */
+    @media screen and (max-width: 500px) {
+        header, footer {
+            height: 60px;
+            width: 100vw;
+        }
+        .header-link {
+            width: 100px;
+            height: 50px;
+            margin-top: 5px;
+        }
+        #footer-form-link {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        #rps-heading {
+            font-size: 180%;
+        }
+        #rps-outcome-display {
+            font-size: 100%;
+            width: fit-content;
+        }
+        .rps-selection {
+            width: 60px;
+            height: 60px;
+            font-size: 50%;
+        }
+
+    }
