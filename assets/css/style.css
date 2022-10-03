@@ -326,5 +326,36 @@ footer {
 
 #contact-wrapper {
     max-width: 50%;
-    margin: 50px auto;
+    margin: 25px auto;
+    font-size: 200%;
+}
+
+.form-element {
+    display: block;
+    margin: auto;
+}
+
+input, textarea {
+    min-width: 300px;
+    width: 20%;
+    border: 3px solid #BABB9F;
+    border-radius: 3%;
+    font-size: 80%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #4A4A4A;
+    color: #BABB9F;
+
+    text-align: center;
+    resize: none;
+}
+
+#send-msg {
+    margin: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: #BABB9F;
+    color: #4A4A4A;
+    border: 3px solid #BABB9F;
+    border-radius: 3%;
+    font-size: 80%;
 }
