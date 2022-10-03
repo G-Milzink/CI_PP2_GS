@@ -28,7 +28,7 @@
             <label for="msg" class="form-element">Message:</label>
             <textarea id="msg" class="form-element" name="msg" cols="30" rows="8" placeholder="Leave me a message! :)" required></textarea>
 
-            <button type="submit" id="send-msg">SUBMIT</button>
+            <button type="submit" id="send-msg" onclick='sendMessage()'>SUBMIT</button>
         </form>
     </div>
     <footer>
@@ -37,5 +37,16 @@
 
     <!-- JavaScript -->
     <script src="assets/js/contact.js"></script>
+
+    <!-- EmailJS integration -->
+    <!-- Taken from the emailsJS tutorial -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("bovvHg1tPmzz8Kd9n");
+        })();
+    </script>
+
 </body>
+
 </html>
