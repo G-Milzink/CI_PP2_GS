@@ -1,3 +1,7 @@
+(function() {
+    emailjs.init("nHsMv-fGFHGxcKPg5");
+})();
+
 function sendMessage(){
     var params = {
         from_name : document.getElementById("name").value,
@@ -8,3 +12,4 @@ function sendMessage(){
     })
     alert("message sent! Thank you! :)");
 }
+
