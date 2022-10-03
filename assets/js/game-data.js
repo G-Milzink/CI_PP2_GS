@@ -1,3 +1,9 @@
+// Create array with possible outcomes  for rock paper scissors game.
+const outcomeTable = [];
+    outcomeTable[0] = ["DRAW", "WIN", "LOSE"];
+    outcomeTable[1] = ["LOSE", "DRAW", "WIN"];
+    outcomeTable[2] = ["WIN", "LOSE", "DRAW"];
+
 // Create an array of riddles and answers for "Quizzit" game.
 const RIDDLES = [];
 RIDDLES[0] = ["I'm rarely touched but often held. If you have wit, you'll use me well. What am I?","A Tongue"];

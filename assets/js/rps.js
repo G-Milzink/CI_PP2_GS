@@ -94,11 +94,6 @@ function rpsAiInput(){
  * Display outcome for player and update score counters.
  */
  function rpsDecideRound(){
-    const outcomeTable = [];
-    outcomeTable[0] = ["DRAW", "WIN", "LOSE"];
-    outcomeTable[1] = ["LOSE", "DRAW", "WIN"];
-    outcomeTable[2] = ["WIN", "LOSE", "DRAW"];
-
     document.getElementById("rps-outcome-display").textContent = outcomeTable[rpsAiChoice][rpsPlayerChoice];
     console.log(outcomeTable[rpsAiChoice][rpsPlayerChoice]);
     console.log(rpsLoseCounter);
