@@ -24,8 +24,12 @@ function sendMessage(){
         email_id : document.getElementById("email").value,
         message : document.getElementById("msg").value
     };
-    emailjs.send("service_6eisq0d","template_yf457nh",params).then(function(res){
-    });
-    document.getElementById("send-msg").textContent = "Sent!";
+        if (params.from_name !== '' && params.email_id !== '' && params.message !== ''){
+            emailjs.send("service_6eisq0d","template_yf457nh",params).then(function(res){
+            });
+            document.getElementById("send-msg").textContent = "Thanks!";
+            location.assign("../../index.html");
+        }
 }
+
 
