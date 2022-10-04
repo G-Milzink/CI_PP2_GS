@@ -323,6 +323,12 @@ footer {
 }
 
 /* Contact specific styling */
+#modal {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 20vh;
+    background-color: #4A4A4A;
+}
 
 #contact-wrapper {
     min-width: 50%;

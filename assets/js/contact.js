@@ -1,3 +1,5 @@
+document.getElementById("modal").style.display = none;
+
 document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("send-msg").addEventListener("click", sendMessage);
 });
@@ -24,11 +26,20 @@ function sendMessage(){
         email_id : document.getElementById("email").value,
         message : document.getElementById("msg").value
     };
-        if (params.from_name !== '' && params.email_id !== '' && params.message !== ''){
-            console.log(checkIfEmail(params.email_id))
+        if (params.from_name !== '' && params.email_id !== '' && params.message !== '' && checkIfEmailInString(params.email_id)){
             emailjs.send("service_6eisq0d","template_yf457nh",params).then(function(res){
             });
-            document.getElementById("send-msg").textContent = "Thanks!";
-            location.assign("../../index.html");
+            document.getElementById("modal").style.display = block;
         }
+}
+
+/**
+ * Code snippet taken from Stack Over Flow:
+ * "Check if a string contains an email address?"
+ * https://stackoverflow.com/questions/16424659/check-if-a-string-contains-an-email-address
+ * @param {*} string
+ * @returns true if string contains an email adress 
+ */
+function checkIfEmailInString(string) { 
+    /\b[a-z0-9-_.]+@[a-z0-9-_.]+(\.[a-z0-9]+)+/i.test(string);
 }
