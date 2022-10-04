@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(){
  * using emailJS
  * 
  * Code taken from tutorial:
- * Contact Form with Email Js | Send Emails using JavaScript through Email Js | Email Js Tutorial
+ * "Contact Form with Email Js | Send Emails using JavaScript through Email Js | Email Js Tutorial"
  * by ALTERCODES
  * https://www.youtube.com/watch?v=5EZsRnJpUNU&t=1s&ab_channel=ALTERCODES
  */
