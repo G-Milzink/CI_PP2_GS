@@ -92,7 +92,6 @@ function incrementCorrectGuesses(){
     if (guillotineGlobalVariables.correctGuesses === guillotineGlobalVariables.answer.length){
         ++guillotineGlobalVariables.winCounter;
         document.getElementById("guillotine-wins").textContent = `WIN: ${guillotineGlobalVariables.winCounter}`;
-        alert("You survive...to opress the peasants one more day!")
     }
 }
 
@@ -139,7 +138,6 @@ function guessWrong(){
             document.getElementById("guillotine-display").src = "assets/images/guillotine/06.webp";
             ++guillotineGlobalVariables.loseCounter;
             document.getElementById("guillotine-losses").textContent = `LOSE: ${guillotineGlobalVariables.loseCounter}`;
-            alert("Vive La Revolution!")
             break; 
     }
 }
