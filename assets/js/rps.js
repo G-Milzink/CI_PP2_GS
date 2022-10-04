@@ -50,15 +50,15 @@ function rpsAwaitUserInput(){
     for (selector of selectors){
         selector.addEventListener("click", function(){
             if (document.getElementById("rps-outcome-display").textContent === "Go!" && this.getAttribute("data-type") === "rock"){
-                document.getElementById("player-choice").style.backgroundImage = "url(assets/images/rps/rock.png)";
+                document.getElementById("player-choice").style.backgroundImage = "url(assets/images/rps/rock.webp)";
                 rpsPlayerChoice = 0;
                 rpsAiInput();
             } else if (document.getElementById("rps-outcome-display").textContent === "Go!" && this.getAttribute("data-type") === "paper"){
-                document.getElementById("player-choice").style.backgroundImage = "url(assets/images/rps/paper.png)";
+                document.getElementById("player-choice").style.backgroundImage = "url(assets/images/rps/paper.webp)";
                 rpsPlayerChoice = 1;
                 rpsAiInput();
             } else if (document.getElementById("rps-outcome-display").textContent === "Go!" && this.getAttribute("data-type") === "scissors"){
-                document.getElementById("player-choice").style.backgroundImage = "url(assets/images/rps/scissors.png)";
+                document.getElementById("player-choice").style.backgroundImage = "url(assets/images/rps/scissors.webp)";
                 rpsPlayerChoice = 2;
                 rpsAiInput();
             } 
@@ -74,15 +74,15 @@ function rpsAiInput(){
     if (document.getElementById("rps-outcome-display").textContent === "Go!"){
         if (choice === 1){
             document.getElementById("rps-outcome-display").textContent = "...";
-            document.getElementById("ai-choice").style.backgroundImage = "url(assets/images/rps/rock.png)";
+            document.getElementById("ai-choice").style.backgroundImage = "url(assets/images/rps/rock.webp)";
             rpsAiChoice = 0;
         } else if (choice === 2){
             document.getElementById("rps-outcome-display").textContent = "...";
-            document.getElementById("ai-choice").style.backgroundImage = "url(assets/images/rps/paper.png)";
+            document.getElementById("ai-choice").style.backgroundImage = "url(assets/images/rps/paper.webp)";
             rpsAiChoice = 1;
         } else if (choice === 3){
             document.getElementById("rps-outcome-display").textContent = "...";
-            document.getElementById("ai-choice").style.backgroundImage = "url(assets/images/rps/scissors.png)";
+            document.getElementById("ai-choice").style.backgroundImage = "url(assets/images/rps/scissors.webp)";
             rpsAiChoice = 2;
         } 
     }

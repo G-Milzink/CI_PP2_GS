@@ -122,23 +122,23 @@ function guessWrong(){
     ++guillotineGlobalVariables.wrongGuesses;
     switch(guillotineGlobalVariables.wrongGuesses){
         case 1:
-            document.getElementById("guillotine-display").src = "assets/images/guillotine/1.png";
+            document.getElementById("guillotine-display").src = "assets/images/guillotine/01.webp";
             break;
         case 2:
-            document.getElementById("guillotine-display").src = "assets/images/guillotine/2.png";
+            document.getElementById("guillotine-display").src = "assets/images/guillotine/02.webp";
             break;
         case 3:
-            document.getElementById("guillotine-display").src = "assets/images/guillotine/3.png";
+            document.getElementById("guillotine-display").src = "assets/images/guillotine/03.webp";
             break;
         case 4:
-            document.getElementById("guillotine-display").src = "assets/images/guillotine/4.png";
+            document.getElementById("guillotine-display").src = "assets/images/guillotine/04.webp";
             break;
         case 5:
-            document.getElementById("guillotine-display").src = "assets/images/guillotine/5.png";
+            document.getElementById("guillotine-display").src = "assets/images/guillotine/05.webp";
             break;
         case 6:
             document.getElementById("guillotine-display").style.border = "3px solid red";
-            document.getElementById("guillotine-display").src = "assets/images/guillotine/6.png";
+            document.getElementById("guillotine-display").src = "assets/images/guillotine/06.webp";
             ++guillotineGlobalVariables.loseCounter;
             document.getElementById("guillotine-losses").textContent = `LOSE: ${guillotineGlobalVariables.loseCounter}`;
             alert("Vive La Revolution!")
@@ -159,7 +159,7 @@ function resetGame(){
     guillotineGlobalVariables.wrongGuesses = 0;
     guillotineGlobalVariables.correctGuesses = 0;
 
-    document.getElementById("guillotine-display").src = "assets/images/guillotine/0.png";
+    document.getElementById("guillotine-display").src = "assets/images/guillotine/00.webp";
 
     runGuillotineGame();
 
