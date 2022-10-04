@@ -1,8 +1,8 @@
 // Create array with possible outcomes  for rock paper scissors game.
 const outcomeTable = [];
-    outcomeTable[0] = ["DRAW", "WIN", "LOSE"];
+    outcomeTable[0] = ["DRAW", "WIN",  "LOSE"];
     outcomeTable[1] = ["LOSE", "DRAW", "WIN"];
-    outcomeTable[2] = ["WIN", "LOSE", "DRAW"];
+    outcomeTable[2] = ["WIN",  "LOSE", "DRAW"];
 
 // Create an array of riddles and answers for "Quizzit" game.
 const RIDDLES = [];
@@ -29,4 +29,5 @@ const WORDS = ["ABSOLUTE",
                 "BICYCLE", 
                 "RESTAURANT", 
                 "DOLPHIN", 
-                "SUPERCALIFRAGILISTICEXPIALIDOCIOUS"];
+                "AMENITIES",
+                "RAINFOREST"];
