@@ -42,7 +42,6 @@ footer {
 #greeting {
     position: relative;
     width: 50vw;
-    height: calc(100vh-220px);
     margin: 20vh auto 0 auto;
     font-size: 300%;
 }
@@ -380,7 +379,6 @@ input, textarea {
         #greeting {
             
             width: 80vw;
-            height: calc(100vh-220px);
             font-size: 200%;
         }
         /* rock paper scissors */
