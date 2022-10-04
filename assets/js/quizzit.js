@@ -9,7 +9,7 @@ const quizzitGlobalVariables = {
     "WRONG" : 0,
     "ALLOW_SUBMIT" : false,
     "ANSWERED" : false
-}
+};
 
 // Assign randomized values to 'global' variables.
 quizzitGlobalVariables.RANDOMIZED_RIDDLES = generateListOfRiddles(RIDDLES);
@@ -115,11 +115,11 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
     if (quizzitGlobalVariables.CHOSEN_ANSWER === quizzitGlobalVariables.CORRECT_ANSWER && quizzitGlobalVariables.ALLOW_SUBMIT && !quizzitGlobalVariables.ANSWERED){
             ++quizzitGlobalVariables.SCORE;
             document.getElementById("quizzit-correct").textContent = "Correct: " + quizzitGlobalVariables.SCORE;
-            document.getElementById("riddle-display").textContent = "Congratulations! You are correct."
+            document.getElementById("riddle-display").textContent = "Congratulations! You are correct.";
             document.getElementById("riddle-display").style.color = "#15C400";
             for (button of BUTTONS){
                 button.style.color = "#15C400";
-                    button.textContent = " :) "
+                    button.textContent = " :) ";
             }
     } else if(quizzitGlobalVariables.ALLOW_SUBMIT && !quizzitGlobalVariables.ANSWERED) {
             ++quizzitGlobalVariables.WRONG;
