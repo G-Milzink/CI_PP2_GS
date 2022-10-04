@@ -467,10 +467,9 @@ input, textarea {
         }
         /* contact */
         #contact-wrapper {
-            margin: 10px;
             font-size: 170%;
         }
         #send-msg {
-            margin-left: 110px;
+            margin: 0;
         }
     }
