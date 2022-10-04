@@ -5,7 +5,7 @@ const guillotineGlobalVariables = {
     "correctGuesses" : 0,
     "loseCounter" : 0,
     "winCounter" : 0
-}
+};
 
 // Wait for the DOM to load, then execute main game function:
 document.addEventListener("DOMContentLoaded", runGuillotineGame);
@@ -18,8 +18,8 @@ document.getElementById("new-word").addEventListener("click",resetGame);
 function runGuillotineGame(){
     guillotineGlobalVariables.answer = grabRandomWord();
     buildKeyboard();
-    buildAnswerDisplay()
-    listenToKeyboard()
+    buildAnswerDisplay();
+    listenToKeyboard();
 }
 
 /**
@@ -80,7 +80,7 @@ function listenToKeyboard(){
                 guessWrong();
                 this.style.backgroundColor = "#272626";
             }
-        })
+        });
     }
 }
 
