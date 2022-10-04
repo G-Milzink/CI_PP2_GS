@@ -1,13 +1,14 @@
 
 // Wrap variables in named object to avoid global scope.
 const quizzitGlobalVariables = {
-    "RANDOMIZED_RIDDLES" : '',
-    "RANDOMIZED_ANSWERS" : '',
+    "RANDOMIZED_RIDDLES" : [],
+    "RANDOMIZED_ANSWERS" : [],
     "CORRECT_ANSWER" : '',
     "CHOSEN_ANSWER" : '',
-    "SCORE" : '0',
-    "WRONG" : '0',
+    "SCORE" : 0,
+    "WRONG" : 0,
     "ALLOW_SUBMIT" : false,
+    "ANSWERED" : false
 }
 
 // Assign randomized values to 'global' variables.
@@ -59,6 +60,7 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
  */
  function riddleSelection(){
     document.getElementById("riddle-display").style.color = "#BABB9F";
+    quizzitGlobalVariables.ANSWERED = false;
     var answer;
     if (quizzitGlobalVariables.RANDOMIZED_RIDDLES.length > 0) {
             document.getElementById("riddle-display").textContent = RIDDLES[quizzitGlobalVariables.RANDOMIZED_RIDDLES[0]][0];
@@ -110,7 +112,7 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
  * answer and update win/lose tally.
  */
  function submitAnswer(){
-    if (quizzitGlobalVariables.CHOSEN_ANSWER === quizzitGlobalVariables.CORRECT_ANSWER && quizzitGlobalVariables.ALLOW_SUBMIT){
+    if (quizzitGlobalVariables.CHOSEN_ANSWER === quizzitGlobalVariables.CORRECT_ANSWER && quizzitGlobalVariables.ALLOW_SUBMIT && !quizzitGlobalVariables.ANSWERED){
             ++quizzitGlobalVariables.SCORE;
             document.getElementById("quizzit-correct").textContent = "Correct: " + quizzitGlobalVariables.SCORE;
             document.getElementById("riddle-display").textContent = "Congratulations! You are correct."
@@ -119,7 +121,7 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
                 button.style.color = "#15C400";
                     button.textContent = " :) "
             }
-    } else if(quizzitGlobalVariables.ALLOW_SUBMIT) {
+    } else if(quizzitGlobalVariables.ALLOW_SUBMIT && !quizzitGlobalVariables.ANSWERED) {
             ++quizzitGlobalVariables.WRONG;
             document.getElementById("quizzit-wrong").textContent = "Wrong: " + quizzitGlobalVariables.WRONG;
             document.getElementById("riddle-display").textContent = "Sorry! You are mistaken.";
@@ -130,4 +132,5 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
             }
     }
     quizzitGlobalVariables.ALLOW_SUBMIT = false;
+    quizzitGlobalVariables.ANSWERED = true;
 }
