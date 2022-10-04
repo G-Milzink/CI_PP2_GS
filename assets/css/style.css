@@ -468,6 +468,7 @@ input, textarea {
         /* contact */
         #contact-wrapper {
             font-size: 170%;
+            margin: 5px auto;
         }
         #send-msg {
             margin: 0;
