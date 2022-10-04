@@ -13,6 +13,7 @@ body {
     color: #BABB9F;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    overflow: hidden;
 }
 
 header, footer {
@@ -154,7 +155,7 @@ footer {
 #riddle-display {
     font-size: 200%;
     max-width: 50%;
-    min-height: 300px;
+    min-height: 280px;
     margin-left: auto;
     margin-right: auto;
     height: fit-content;
@@ -361,7 +362,7 @@ input, textarea {
 }
 
 /* RESPONSIVE DESIGN */
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 500px), screen and (max-height: 750px)  {
         /* header/footer */
         header, footer {
             height: 60px;
@@ -412,7 +413,7 @@ input, textarea {
         #riddle-display {
             font-size: 170%;
             max-width: 80%;
-            min-height: 275px;
+            min-height: 250px;
             margin-left: auto;
             margin-right: auto;
             height: fit-content;
@@ -429,6 +430,9 @@ input, textarea {
         #answer-submit-button {
             width: fit-content;
             margin-left: 15px;
+        }
+        img {
+            vertical-align:bottom;
         }
         /* guillotine */
         #guillotine-heading {
