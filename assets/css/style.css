@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body {
@@ -13,7 +14,6 @@ body {
     color: #BABB9F;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    overflow: hidden;
 }
 
 header, footer {
@@ -366,7 +366,7 @@ input, textarea {
         /* header/footer */
         header, footer {
             height: 60px;
-            width: 100vw;
+            width: 100%;
         }
         .header-link {
             width: 100px;
@@ -376,7 +376,6 @@ input, textarea {
         #footer-form-link {
             width: 60px;
             height: 60px;
-            margin-bottom: 10px;
         }
         #greeting {
             
@@ -410,10 +409,14 @@ input, textarea {
         #quizzit-heading {
             font-size: 180%;
         }
+        .quizzit-footer-adjust{
+            position: absolute; 
+            bottom: 0;
+        }
         #riddle-display {
             font-size: 170%;
             max-width: 80%;
-            min-height: 250px;
+            min-height: 240px;
             margin-left: auto;
             margin-right: auto;
             height: fit-content;
