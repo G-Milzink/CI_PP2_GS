@@ -62,7 +62,7 @@ function rpsAwaitUserInput(){
                 rpsPlayerChoice = 2;
                 rpsAiInput();
             } 
-        })
+        });
     }
 }
 
