@@ -326,7 +326,7 @@ footer {
 /* Contact specific styling */
 
 #contact-wrapper {
-    max-width: 50%;
+    min-width: 50%;
     margin: 25px auto;
     font-size: 200%;
 }
@@ -469,8 +469,5 @@ input, textarea {
         #contact-wrapper {
             font-size: 170%;
             margin: 5px auto;
-        }
-        #send-msg {
-            margin: 0;
         }
     }

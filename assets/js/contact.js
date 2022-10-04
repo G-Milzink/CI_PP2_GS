@@ -23,6 +23,6 @@ function sendMessage(){
     }
     emailjs.send("service_6eisq0d","template_yf457nh",params).then(function(res){
     })
-    alert("message sent! Thank you! :)");
+    document.getElementById("send-msg").textContent = "Sent!"
 }
 
