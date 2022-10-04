@@ -89,8 +89,6 @@ function listenToKeyboard(){
  */
 function incrementCorrectGuesses(){
     ++guillotineGlobalVariables.correctGuesses;
-    console.log(guillotineGlobalVariables.correctGuesses);
-    console.log(guillotineGlobalVariables.answer.length);
     if (guillotineGlobalVariables.correctGuesses === guillotineGlobalVariables.answer.length){
         ++guillotineGlobalVariables.winCounter;
         document.getElementById("guillotine-wins").textContent = `WIN: ${guillotineGlobalVariables.winCounter}`;

@@ -95,8 +95,6 @@ function rpsAiInput(){
  */
  function rpsDecideRound(){
     document.getElementById("rps-outcome-display").textContent = outcomeTable[rpsAiChoice][rpsPlayerChoice];
-    console.log(outcomeTable[rpsAiChoice][rpsPlayerChoice]);
-    console.log(rpsLoseCounter);
     if (outcomeTable[rpsAiChoice][rpsPlayerChoice] === "LOSE") {
         ++rpsLoseCounter;
         document.getElementById("rps-losses").textContent = `LOSE: ${rpsLoseCounter}`;
