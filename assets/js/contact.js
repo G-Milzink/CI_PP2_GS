@@ -1,15 +1,3 @@
-document.getElementById("modal").style.display = none;
-
-document.addEventListener("DOMContentLoaded", function(){
-    document.getElementById("send-msg").addEventListener("click", sendMessage);
-});
-
-/**
- * emailsjs script, taken from emailjs tutorial page.
- */
-(function() {
-    emailjs.init("nHsMv-fGFHGxcKPg5");
-})();
 
 /**
  * Send information from contact form to my email adress according to template
@@ -20,18 +8,21 @@ document.addEventListener("DOMContentLoaded", function(){
  * by ALTERCODES
  * https://www.youtube.com/watch?v=5EZsRnJpUNU&t=1s&ab_channel=ALTERCODES
  */
-function sendMessage(){
+
+document.getElementById("contact-form").addEventListener("submit", function(event){
+    event.preventDefault();
     var params = {
         from_name : document.getElementById("name").value,
         email_id : document.getElementById("email").value,
         message : document.getElementById("msg").value
     };
-        if (params.from_name !== '' && params.email_id !== '' && params.message !== '' && checkIfEmailInString(params.email_id)){
-            emailjs.send("service_6eisq0d","template_yf457nh",params).then(function(res){
-            });
-            document.getElementById("modal").style.display = block;
-        }
-}
+    emailjs.init("nHsMv-fGFHGxcKPg5");
+    document.getElementById("send-msg").textContent = "WORKING";
+    emailjs.send("service_6eisq0d","template_yf457nh",params).then(() => {
+        displayMessage();
+    });       
+});
+
 
 /**
  * Code snippet taken from Stack Over Flow:
@@ -42,4 +33,15 @@ function sendMessage(){
  */
 function checkIfEmailInString(string) { 
     /\b[a-z0-9-_.]+@[a-z0-9-_.]+(\.[a-z0-9]+)+/i.test(string);
+}
+
+function displayMessage(){
+    let message = `
+                    <div id="modal">
+                        <h1>Thanks!</h1>
+                        <h2>Your message has been seent!</h2>
+                        <button id="back-home" onclick="window.location.href='index.html';">Take me back.</button>
+                    </div>
+    `;
+    document.getElementById("contact-wrapper").innerHTML = message;
 }
