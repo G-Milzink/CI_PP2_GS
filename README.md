@@ -273,7 +273,7 @@ and wether they where right or wrong. Green borders for correct guesses and red 
 ### Form confirmation
 - Loads once the user has succesfully submitted a message.
 - Shows a short message thanking the user for completing the form and presents a link back to Home page.
-- user storie covered: 6
+- user story covered: 6
 
 <details><summary>Contact (confirmation)</summary>
 <img src="docs/features/contact/ft_contact_thanks.webp">
@@ -282,7 +282,12 @@ and wether they where right or wrong. Green borders for correct guesses and red 
 ### 404 
 - Custom 404 page loads when the user tries to navigate to a non-existing url. 
 - The user is presented with a short apology and a link back to the homepage.
+- user story covered: 10
 
 <details><summary>404 page</summary>
 <img src="docs/features/ft_404.webp">
 </details>
+
+## Validation
+
+### HTML Validation
