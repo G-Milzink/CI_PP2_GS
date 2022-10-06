@@ -163,9 +163,9 @@ footer {
 .answer-button {
     width: 100px;
     height: 30px;
-    background-color: #272626;
-    color: #BABB9F;
-    border: 3px solid #BABB9F;
+    background-color: #BABB9F;
+    color: #4A4A4A;
+    border: 3px solid #4A4A4A;
     border-radius: 5%;
     margin: 5px;
     font-weight: bold;

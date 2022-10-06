@@ -89,7 +89,6 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
     let randomButton = `answer-${rand+1}`;
     let buttons = document.getElementsByClassName("answer-button");
     for (button of buttons){
-            button.style.color = "#BABB9F";
             if (button.getAttribute("data-type") === randomButton){
                 button.textContent = correctAnswer;    
             } else {
@@ -118,8 +117,7 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
             document.getElementById("riddle-display").textContent = "Congratulations! You are correct.";
             document.getElementById("riddle-display").style.color = "#15C400";
             for (button of BUTTONS){
-                button.style.color = "#15C400";
-                    button.textContent = " :) ";
+                    button.textContent = "...";
             }
     } else if(quizzitGlobalVariables.ALLOW_SUBMIT && !quizzitGlobalVariables.ANSWERED) {
             ++quizzitGlobalVariables.WRONG;
@@ -127,8 +125,7 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
             document.getElementById("riddle-display").textContent = "Sorry! You are mistaken.";
             document.getElementById("riddle-display").style.color = "red";
             for (button of BUTTONS){
-                    button.style.color = "red";
-                    button.textContent = " :( ";
+                    button.textContent = "...";
             }
     }
     quizzitGlobalVariables.ALLOW_SUBMIT = false;
