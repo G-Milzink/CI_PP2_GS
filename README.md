@@ -253,3 +253,25 @@ and wether they where right or wrong. Green borders for correct guesses and red 
 <details><summary>Guillotine lose</summary>
 <img src="docs/features/guillotine/ft_guillotine_lose.webp">
 </details>
+
+### Contact 
+- Loads when the user clicks the contact icon in the footer.
+- Displays a simple form with wich the user can send and email to the developer by entering their name, email adress and a  short message.
+- The form will submit only when all three fields have been filled out.
+- Once the user submitss their message the submit button will change it text content to 'working' to inform the user that their request is being processed.
+- Once the message has been sent the user is presented with a 'thank you' message and a link to the home page.
+
+<details><summary>Contact (form)</summary>
+<img src="docs/features/contact/ft_contact.webp">
+</details>
+<details><summary>Contact (working)</summary>
+<img src="docs/features/contact/ft_contact_working.webp">
+</details>
+
+### Thank you
+- Loads once the user has succesfully submitted a message.
+- Shows a short message thanking the user for completing the form and presents a link back to Home page.
+
+<details><summary>Contact (thanks)</summary>
+<img src="docs/features/contact/ft_contact_thanks.webp">
+</details>
