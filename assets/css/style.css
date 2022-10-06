@@ -332,9 +332,14 @@ footer {
     background-color: #4A4A4A;
 }
 
+#contact-heading {
+    font-size: 200%;
+    margin-bottom: 0;
+}
+
 #contact-wrapper {
     min-width: 50%;
-    margin: 25px auto;
+    margin: 0 auto;
     font-size: 200%;
 }
 
