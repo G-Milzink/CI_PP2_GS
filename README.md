@@ -129,3 +129,25 @@ The websites main structure has been kept simple and clear without any unnecesar
 <details><summary>404</summary>
 <img src="docs/wireframes/404.webp">
 </details>
+
+## Technologies Used
+
+### Languages
+
+- HTML
+- CSS
+- JavaScript
+
+### Tools & Libraries
+
+- [Blender](https://www.blender.org/) Was used to create logo's and game images.
+- [Gimp](https://www.gimp.org/) Was used to crop/resize/reformat images.
+- [Swatcher](https://swatcherapp.com/) Was used to construct the colour scheme.
+- [EmailJS](https://www.emailjs.com) Was used to send email from the contact form.
+- [Favicon.io](https://favicon.io) Was used for making creating the websites favicons.
+- [Google Fonts](https://fonts.google.com/) Was used to implement the 'roboto' font.
+- [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools) Where used for debugging and testing performance.
+- [WC3 Validator](https://validator.w3.org/), [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/), [JShint](https://jshint.com/) 
+where used to validate HTML, CSS and Javascript code respectively.
+- [Wave Validator](https://wave.webaim.org/) was used to confirm accesabillity.
+
