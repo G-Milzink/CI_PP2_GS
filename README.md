@@ -102,8 +102,8 @@ The 'Roboto' font is used to display all the main content across the site. It wa
 
 The websites main structure has been kept simple and clear without any unnecesary elements to avoid clutter and improve accesibillity.
 
-- The site consist of the following screens:
-  - Welcome screen pointing users to the game selection and the option to send a message
+- The site consist of the following five pages:
+  - Welcome screen pointing users to the game selection in the header and the contact link in the footer.
   - A page containing the 'Rock Paper Scissors' game.
   - A page containing the 'Quizit' game.
   - A Page containg the 'Guillotine' (hangman) game.
@@ -141,7 +141,7 @@ The websites main structure has been kept simple and clear without any unnecesar
 ### Tools & Libraries
 
 - [Blender](https://www.blender.org/) Was used to create logo's and game images.
-- [Gimp](https://www.gimp.org/) Was used to crop/resize/reformat images.
+- [Krita](https://krita.org/) Was used to crop/resize/reformat images.
 - [Swatcher](https://swatcherapp.com/) Was used to construct the colour scheme.
 - [EmailJS](https://www.emailjs.com) Was used to send email from the contact form.
 - [Favicon.io](https://favicon.io) Was used for making creating the websites favicons.
@@ -151,3 +151,33 @@ The websites main structure has been kept simple and clear without any unnecesar
 where used to validate HTML, CSS and Javascript code respectively.
 - [Wave Validator](https://wave.webaim.org/) was used to confirm accesabillity.
 
+## Features
+
+The website consists of five pages containing 9 seperate features.
+
+### Header
+- featured on all pages.
+- contains links to the available games.
+- user stories covered: 1, 7
+
+<details><summary>Header image</summary>
+<img src="docs/features/header.webp">
+</details>
+
+### Footer
+- featured on all pages.
+- contains links to the contact page.
+- user stories covered: 5, 11
+
+<details><summary>Footer image</summary>
+<img src="docs/features/ft_footer.webp">
+</details>
+
+### Home (welcome)
+- shown when user first loads the website.
+- displays a welcome message and points user to the links in the header and footer.
+- user stories covered: 1, 7, 11
+
+<details><summary>Home image</summary>
+<img src="docs/features/ft_welcome.webp">
+</details>
