@@ -77,7 +77,7 @@ The goal of this project was to create a website where the user can play a few s
 
 ### Site Owner
 
-7. I want the user to choose between Rock Paper Scissors, A quiz and a Hangman game.
+7. I want the user to be able to choose between Rock Paper Scissors, A quiz and a Hangman game.
 8. I want user to easily understand the different games.
 9. I want my game to be fully responsive
 10. I want the user to not have to use the back button when they receive a 404 error.
