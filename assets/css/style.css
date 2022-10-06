@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #313131;
+    background-color: #141414;
     color: #BABB9F;
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -96,7 +96,7 @@ footer {
 }
 
 #rps-losses {
-    color: red;
+    color: #ff0000;
     float: left;
     font-size: 160%;
 }
