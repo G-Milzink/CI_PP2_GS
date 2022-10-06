@@ -24,6 +24,7 @@ function rpsGame(){
 function rpsBegin(){
     document.getElementById("ai-choice").style.backgroundImage = "";
     document.getElementById("player-choice").style.backgroundImage = "";
+    document.getElementById("rps-outcome-display").style.color = "#BABB9F";
     document.getElementById("rps-outcome-display").textContent = 3;
     rpsGlobalVars.rpsCountdownTimer = setInterval(rpsCountdown,1000);
 }
@@ -98,11 +99,14 @@ function rpsAiInput(){
  function rpsDecideRound(){
     document.getElementById("rps-outcome-display").textContent = outcomeTable[rpsGlobalVars.rpsAiChoice][rpsGlobalVars.rpsPlayerChoice];
     if (outcomeTable[rpsGlobalVars.rpsAiChoice][rpsGlobalVars.rpsPlayerChoice] === "LOSE") {
+        document.getElementById("rps-outcome-display").style.color = "red";
         ++rpsGlobalVars.rpsLoseCounter;
         document.getElementById("rps-losses").textContent = `LOSE: ${rpsGlobalVars.rpsLoseCounter}`;
-    }
-    if (outcomeTable[rpsGlobalVars.rpsAiChoice][rpsGlobalVars.rpsPlayerChoice] === "WIN") {
+    } else if (outcomeTable[rpsGlobalVars.rpsAiChoice][rpsGlobalVars.rpsPlayerChoice] === "WIN") {
+        document.getElementById("rps-outcome-display").style.color = "#15C400";
         ++rpsGlobalVars.rpsWinCounter;
         document.getElementById("rps-wins").textContent = `WIN: ${rpsGlobalVars.rpsWinCounter}`;
+    } else {
+        document.getElementById("rps-outcome-display").style.color = "yellow";
     }
 }
