@@ -4,7 +4,7 @@
 
 [Live website](https://g-milzink.github.io/CI_PP2_GS/)
 
-![Mockup image](assets/readme/amiresponsive.webp)
+![Mockup image](docs/amiresponsive.webp)
 
 ## Table of Content
   - [Project Goals](#project-goals)
@@ -92,7 +92,7 @@ The colour scheme consists of mostly neutral colours the Dark grey background pr
 - Red and green are used to provide clear recognizable feedback to the user about the different win/lose states of the games.
 - Minor variations of the basic gray tints are used to provide feedback on the keyboard for the Guillotine game.
 
-<img src="assets/readme/colours.webp">
+<img src="docs/colours.webp">
 
 ### Font
 
@@ -111,3 +111,21 @@ The websites main structure has been kept simple and clear without any unnecesar
   - A custom 404 page.
 
 ### Wireframes
+<details><summary>Index</summary>
+<img src="docs/wireframes/index.webp">
+</details>
+<details><summary>Rock Paper Scissors</summary>
+<img src="docs/wireframes/rps.webp">
+</details>
+<details><summary>Quizzit</summary>
+<img src="docs/wireframes/quizzit.webp">
+</details>
+<details><summary>Guillotine</summary>
+<img src="docs/wireframes/guillotine.webp">
+</details>
+<details><summary>Contact</summary>
+<img src="docs/wireframes/contact.webp">
+</details>
+<details><summary>404</summary>
+<img src="docs/wireframes/404.webp">
+</details>
