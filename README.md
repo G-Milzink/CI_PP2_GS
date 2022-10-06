@@ -173,11 +173,30 @@ The website consists of five pages containing 9 seperate features.
 <img src="docs/features/ft_footer.webp">
 </details>
 
-### Home (welcome)
+### Home (welcome screen)
 - shown when user first loads the website.
 - displays a welcome message and points user to the links in the header and footer.
 - user stories covered: 1, 7, 11
 
 <details><summary>Home image</summary>
-<img src="docs/features/ft_welcome.webp">
+<img src="docs/features/ft_home.webp">
+</details>
+
+### Rock Paper Scissors (game)
+- loads when the user clicks the appropriate icon in the header.
+- Displays an intuitively laid out interface for playing a "rock paper scissors" game.
+- Interactive elements have darker text against a light background to stand out.
+- user stories covered: 2, 3, 8, 9
+
+<details><summary>Rock Paper Scissors, pre-game</summary>
+<img src="docs/features/rps/ft_rps.webp">
+</details>
+<details><summary>Rock Paper Scissors, win</summary>
+<img src="docs/features/rps/ft_rps_win.webp">
+</details>
+<details><summary>Rock Paper Scissors, draw</summary>
+<img src="docs/features/rps/ft_rps_draw.webp">
+</details>
+<details><summary>Rock Paper Scissors, lose</summary>
+<img src="docs/features/rps/ft_rps_lose.webp">
 </details>
