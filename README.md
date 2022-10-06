@@ -66,6 +66,8 @@ The goal of this project was to create a website where the user can play a few s
 - Website needs to function on any device.
 - A way to contact the developer to give feedback.
 
+## User Stories
+
 ### Site User
 
 1. I want to choose between several games.
