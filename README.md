@@ -187,7 +187,9 @@ The website consists of five pages containing 9 seperate features.
 ### Rock Paper Scissors (game)
 - loads when the user clicks the appropriate icon in the header.
 - Displays an intuitively laid out interface for playing a "rock paper scissors" game.
-- Interactive elements have darker text against a light background to stand out.
+- Interactive elements have darker text against a light background to stand out. (This is consisitent throughout all three games.)
+- once the user clicks 'start' a countdown is displayed
+- once the countdown hit 'Go!' the user can then choose: Rock, Paper or Scissors.
 - user stories covered: 2, 3, 8, 9
 
 <details><summary>Rock Paper Scissors, pre-game</summary>
@@ -202,3 +204,9 @@ The website consists of five pages containing 9 seperate features.
 <details><summary>Rock Paper Scissors, lose</summary>
 <img src="docs/features/rps/ft_rps_lose.webp">
 </details>
+
+### Quizzit (game)
+- loads when the user clicks the appropriate icon in the header.
+- Displays an intuitively laid out interface for playing a simple quiz.
+- Interactive elements have darker text against a light background to stand out. (This is consisitent throughout all three games.)
+- user stories covered: 2, 3, 8, 9
