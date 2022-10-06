@@ -189,7 +189,8 @@ The website consists of five pages containing 9 seperate features.
 - Displays an intuitively laid out interface for playing a "rock paper scissors" game.
 - Interactive elements have darker text against a light background to stand out. (This is consisitent throughout all three games.)
 - once the user clicks 'start' a countdown is displayed
-- once the countdown hit 'Go!' the user can then choose: Rock, Paper or Scissors.
+- once the countdown hits 'Go!' the user can then choose: Rock, Paper or Scissors. The site will then simulate the opponents choice en the outcome will be evaluated.
+- Score section at the bottom of the screen keeps track of wins/losses.
 - user stories covered: 2, 3, 8, 9
 
 <details><summary>Rock Paper Scissors, pre-game</summary>
@@ -209,4 +210,22 @@ The website consists of five pages containing 9 seperate features.
 - loads when the user clicks the appropriate icon in the header.
 - Displays an intuitively laid out interface for playing a simple quiz.
 - Interactive elements have darker text against a light background to stand out. (This is consisitent throughout all three games.)
+-Once the user clicks the "riddle me" button the site presents a simple riddle and populates the buttons at the bottom possible answers. 
+- The button that displays the correct answer is different everytime a particular riddle is displayed.
+- The incorrect answers options are different every time a particular riddle is displayed.
+- Once the user has selected an answer they can 
 - user stories covered: 2, 3, 8, 9
+
+<details><summary>Quizzit, pre-game</summary>
+<img src="docs/features/quizzit/ft_quizzit.webp">
+</details>
+<details><summary>Quizzit, riddle shown</summary>
+<img src="docs/features/quizzit/ft_quizzit_riddle.webp">
+</details>
+<details><summary>Quizzit, guess correct</summary>
+<img src="docs/features/quizzit/ft_quizzit_correct.webp">
+</details>
+<details><summary>Quizzit, guess incorrect</summary>
+<img src="docs/features/quizzit/ft_quizzit_wrong.webp">
+</details>
+
