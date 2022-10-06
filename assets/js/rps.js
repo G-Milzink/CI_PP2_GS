@@ -7,7 +7,6 @@ const rpsGlobalVars = {
     "rpsWinCounter" : 0
 }
 
-
 // Wait for DOM to load then run main "game-loop":
 document.addEventListener("DOMContentLoaded", rpsGame);
 
