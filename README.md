@@ -324,4 +324,22 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 
 ### Javascript
 
+JSHint JavaScript Validation Service was used to validate the Javascript files. No issues of importance where found.
+
+<details><summary>rps.js</summary>
+<img src="docs/validation/js/rps_js_valid.webp">
+</details>
+<details><summary>quizzit.js</summary>
+<img src="docs/validation/js/quizzit_js_valid.webp">
+</details>
+<details><summary>guillotine.js</summary>
+<img src="docs/validation/js/guillotine_js_valid.webp">
+</details>
+<details><summary>contact.js</summary>
+<img src="docs/validation/js/contact_js_valid.webp">
+</details>
+<details><summary>game-data.js</summary>
+<img src="docs/validation/js/game-data_js_valid.webp">
+</details>
+
 ### Accessabillity
