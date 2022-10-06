@@ -42,7 +42,7 @@
 
 ## Project Goals
 
-The goal of this project was to create a website where the user can play a few simple games to pas time.
+The goal of this project was to create a website where the user can play a few simple games to pass time.
 
 ### Site Owner Goals
 
@@ -321,3 +321,7 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 <details><summary>style.css</summary>
 <img src="docs/validation/css/css_valid_cssonly.webp">
 </details>
+
+### Javascript
+
+### Accessabillity
