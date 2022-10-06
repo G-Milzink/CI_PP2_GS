@@ -291,3 +291,23 @@ and wether they where right or wrong. Green borders for correct guesses and red 
 ## Validation
 
 ### HTML Validation
+
+The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass without errors or warnings.
+<details><summary>index.html</summary>
+<img src="docs/validation/index_html_valid.webp">
+</details>
+<details><summary>rps.html</summary>
+<img src="docs/validation/rps_html_valid.webp">
+</details>
+<details><summary>quizzit.html</summary>
+<img src="docs/validation/quizzit_html_valid.webp">
+</details>
+<details><summary>guillotine.html</summary>
+<img src="docs/validation/guillotine_html_valid.webp">
+</details>
+<details><summary>contact.html</summary>
+<img src="docs/validation/contact_html_valid.webp">
+</details>
+<details><summary>404.html</summary>
+<img src="docs/validation/404_html_valid.webp">
+</details>
