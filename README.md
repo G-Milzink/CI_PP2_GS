@@ -1,10 +1,10 @@
-# Sunshine Guessing Game <img src="assets\images\correct-answer-full-sun.png" style="width: 40px;height:40px;">
+# Play A Game 
 
-**Developer: Aleksandra Haniok**
+**Developer: Gustaaf Milzink**
 
-[Visit live website](https://aleksandracodes.github.io/CI_PP2_SunshineGuessing/)
+[Live website](https://g-milzink.github.io/CI_PP2_GS/)
 
-![Mockup image](docs/ami-responsivedesign-sunshineguessing.PNG)
+![Mockup image](assets/readme/amiresponsive.webp)
 
 ## Table of Content
   - [Project Goals](#project-goals)
@@ -77,17 +77,37 @@ The goal of this project was to create a website where the user can play a few s
 
 ### Site Owner
 
-7. I want user to easily understand the different games.
-8. I want my game to be fully responsive
-9. I want the user to not have to use the back button when they receive a 404 error.
+7. I want the user to choose between Rock Paper Scissors, A quiz and a Hangman game.
+8. I want user to easily understand the different games.
+9. I want my game to be fully responsive
+10. I want the user to not have to use the back button when they receive a 404 error.
 11. I want user to be able to send me a message and provide feedback.
 
 ## Design
 
 ### Colour Scheme
 
-The colour scheme consists of mostly neutral color to draw attention to the interactive elements. 
+The colour scheme consists of mostly neutral colours the Dark grey background providing clear contrast for the lighter text colour.
 - Yellow and white are used to show when an element has been clicked.
 - Red and green are used to provide clear recognizable feedback to the user about the different win/lose states of the games.
+- Minor variations of the basic gray tints are used to provide feedback on the keyboard for the Guillotine game.
 
 <img src="assets/readme/colours.webp">
+
+### Font
+
+The 'Roboto' font is used to display all the main content across the site. It was chosen for readabillity and aesthetics. A simple straightforward font that works well with the colour scheme.
+
+### Structure
+
+The websites main structure has been kept simple and clear without any unnecesary elements to avoid clutter and improve accesibillity.
+
+- The site consist of the following screens:
+  - Welcome screen pointing users to the game selection and the option to send a message
+  - A page containing the 'Rock Paper Scissors' game.
+  - A page containing the 'Quizit' game.
+  - A Page containg the 'Guillotine' (hangman) game.
+  - A page containing a contact form.
+  - A custom 404 page.
+
+### Wireframes
