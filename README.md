@@ -81,7 +81,7 @@ The goal of this project was to create a website where the user can play a few s
 
 7. I want the user to be able to choose between Rock Paper Scissors, A quiz and a Hangman game.
 8. I want user to easily understand the different games.
-9. I want my game to be fully responsive
+9. I want my game to be fully responsive and provide feedback
 10. I want the user to not have to use the back button when they receive a 404 error.
 11. I want user to be able to send me a message and provide feedback.
 
@@ -240,6 +240,7 @@ and wether they where right or wrong. Green borders for correct guesses and red 
 - Every correct guess fills in the appropriate letters in the space below the main image until the entire word is guessed and the game is won.
 - Every incorrect guess progresses a sequence of images displayed in the center of the screen until the guillotine drops and the game is lost. 
 - The 'reset' button clears the game and generates a new word. 
+- user stories covered: 2, 3, 8, 9
 
 <details><summary>Guillotine start</summary>
 <img src="docs/features/guillotine/ft_guillotine.webp">
@@ -259,7 +260,8 @@ and wether they where right or wrong. Green borders for correct guesses and red 
 - Displays a simple form with wich the user can send and email to the developer by entering their name, email adress and a  short message.
 - The form will submit only when all three fields have been filled out.
 - Once the user submitss their message the submit button will change it text content to 'working' to inform the user that their request is being processed.
-- Once the message has been sent the user is presented with a 'thank you' message and a link to the home page.
+- Once the message has been sent the user is presented with confirmation.
+- user stories covered: 5, 11
 
 <details><summary>Contact (form)</summary>
 <img src="docs/features/contact/ft_contact.webp">
@@ -268,10 +270,19 @@ and wether they where right or wrong. Green borders for correct guesses and red 
 <img src="docs/features/contact/ft_contact_working.webp">
 </details>
 
-### Thank you
+### Form confirmation
 - Loads once the user has succesfully submitted a message.
 - Shows a short message thanking the user for completing the form and presents a link back to Home page.
+- user storie covered: 6
 
-<details><summary>Contact (thanks)</summary>
+<details><summary>Contact (confirmation)</summary>
 <img src="docs/features/contact/ft_contact_thanks.webp">
+</details>
+
+### 404 
+- Custom 404 page loads when the user tries to navigate to a non-existing url. 
+- The user is presented with a short apology and a link back to the homepage.
+
+<details><summary>404 page</summary>
+<img src="docs/features/ft_404.webp">
 </details>
