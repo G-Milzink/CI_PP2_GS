@@ -80,4 +80,14 @@ The goal of this project was to create a website where the user can play a few s
 7. I want user to easily understand the different games.
 8. I want my game to be fully responsive
 9. I want the user to not have to use the back button when they receive a 404 error.
-11. I want user to be able to send me message and provide feedback.
+11. I want user to be able to send me a message and provide feedback.
+
+## Design
+
+### Colour Scheme
+
+The colour scheme consists of mostly neutral color to draw attention to the interactive elements. 
+- Yellow and white are used to show when an element has been clicked.
+- Red and green are used to provide clear recognizable feedback to the user about the different win/lose states of the games.
+
+<img src="assets/readme/colours.webp">
