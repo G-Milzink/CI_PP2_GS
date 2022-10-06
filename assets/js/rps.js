@@ -1,9 +1,12 @@
 // Declare global variables:
-var rpsCountdownTimer;
-var rpsPlayerChoice;
-var rpsAIChoice;
-var rpsLoseCounter = 0;
-var rpsWinCounter = 0;
+const rpsGlobalVars = {
+    "rpsCountdownTimer" : '',
+    "rpsPlayerChoice" : '',
+    "rpsAIChoice" : '',
+    "rpsLoseCounter" : 0,
+    "rpsWinCounter" : 0
+}
+
 
 // Wait for DOM to load then run main "game-loop":
 document.addEventListener("DOMContentLoaded", rpsGame);
@@ -23,7 +26,7 @@ function rpsBegin(){
     document.getElementById("ai-choice").style.backgroundImage = "";
     document.getElementById("player-choice").style.backgroundImage = "";
     document.getElementById("rps-outcome-display").textContent = 3;
-    rpsCountdownTimer = setInterval(rpsCountdown,1000);
+    rpsGlobalVars.rpsCountdownTimer = setInterval(rpsCountdown,1000);
 }
 
 /**
@@ -36,7 +39,7 @@ function rpsBegin(){
          document.getElementById("rps-outcome-display").textContent = --msg;
     } else {
         document.getElementById("rps-outcome-display").textContent = "Go!";
-        clearInterval(rpsCountdownTimer);
+        clearInterval(rpsGlobalVars.rpsCountdownTimer);
         rpsAwaitUserInput();
     }
 }
@@ -51,15 +54,15 @@ function rpsAwaitUserInput(){
         selector.addEventListener("click", function(){
             if (document.getElementById("rps-outcome-display").textContent === "Go!" && this.getAttribute("data-type") === "rock"){
                 document.getElementById("player-choice").style.backgroundImage = "url(assets/images/rps/rock.webp)";
-                rpsPlayerChoice = 0;
+                rpsGlobalVars.rpsPlayerChoice = 0;
                 rpsAiInput();
             } else if (document.getElementById("rps-outcome-display").textContent === "Go!" && this.getAttribute("data-type") === "paper"){
                 document.getElementById("player-choice").style.backgroundImage = "url(assets/images/rps/paper.webp)";
-                rpsPlayerChoice = 1;
+                rpsGlobalVars.rpsPlayerChoice = 1;
                 rpsAiInput();
             } else if (document.getElementById("rps-outcome-display").textContent === "Go!" && this.getAttribute("data-type") === "scissors"){
                 document.getElementById("player-choice").style.backgroundImage = "url(assets/images/rps/scissors.webp)";
-                rpsPlayerChoice = 2;
+                rpsGlobalVars.rpsPlayerChoice = 2;
                 rpsAiInput();
             } 
         });
@@ -75,15 +78,15 @@ function rpsAiInput(){
         if (choice === 1){
             document.getElementById("rps-outcome-display").textContent = "...";
             document.getElementById("ai-choice").style.backgroundImage = "url(assets/images/rps/rock.webp)";
-            rpsAiChoice = 0;
+            rpsGlobalVars.rpsAiChoice = 0;
         } else if (choice === 2){
             document.getElementById("rps-outcome-display").textContent = "...";
             document.getElementById("ai-choice").style.backgroundImage = "url(assets/images/rps/paper.webp)";
-            rpsAiChoice = 1;
+            rpsGlobalVars.rpsAiChoice = 1;
         } else if (choice === 3){
             document.getElementById("rps-outcome-display").textContent = "...";
             document.getElementById("ai-choice").style.backgroundImage = "url(assets/images/rps/scissors.webp)";
-            rpsAiChoice = 2;
+            rpsGlobalVars.rpsAiChoice = 2;
         } 
     }
     rpsDecideRound();
@@ -94,13 +97,13 @@ function rpsAiInput(){
  * Display outcome for player and update score counters.
  */
  function rpsDecideRound(){
-    document.getElementById("rps-outcome-display").textContent = outcomeTable[rpsAiChoice][rpsPlayerChoice];
-    if (outcomeTable[rpsAiChoice][rpsPlayerChoice] === "LOSE") {
-        ++rpsLoseCounter;
-        document.getElementById("rps-losses").textContent = `LOSE: ${rpsLoseCounter}`;
+    document.getElementById("rps-outcome-display").textContent = outcomeTable[rpsGlobalVars.rpsAiChoice][rpsGlobalVars.rpsPlayerChoice];
+    if (outcomeTable[rpsGlobalVars.rpsAiChoice][rpsGlobalVars.rpsPlayerChoice] === "LOSE") {
+        ++rpsGlobalVars.rpsLoseCounter;
+        document.getElementById("rps-losses").textContent = `LOSE: ${rpsGlobalVars.rpsLoseCounter}`;
     }
-    if (outcomeTable[rpsAiChoice][rpsPlayerChoice] === "WIN") {
-        ++rpsWinCounter;
-        document.getElementById("rps-wins").textContent = `WIN: ${rpsWinCounter}`;
+    if (outcomeTable[rpsGlobalVars.rpsAiChoice][rpsGlobalVars.rpsPlayerChoice] === "WIN") {
+        ++rpsGlobalVars.rpsWinCounter;
+        document.getElementById("rps-wins").textContent = `WIN: ${rpsGlobalVars.rpsWinCounter}`;
     }
 }
