@@ -71,6 +71,7 @@ function listenToKeyboard(){
             let letter = this.getAttribute("data-type");
             if (answer.includes(letter)){
                 this.style.backgroundColor = "#747474";
+                this.style.border = "3px solid #15C400";
                 positions = (guessCorrect(letter,answer));
                 for (i of positions){
                     document.getElementById("pos"+i).textContent = letter;
@@ -79,6 +80,7 @@ function listenToKeyboard(){
             } else {
                 guessWrong();
                 this.style.backgroundColor = "#272626";
+                this.style.border = "3px solid red";
             }
         });
     }

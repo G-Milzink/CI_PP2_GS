@@ -240,13 +240,13 @@ footer {
 }
 
 .keys {
-    width: 30px;
-    height: 30px;
-    border: 3px solid #BABB9F;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #4A4A4A;
     border-radius: 5%;
-    background-color: #4A4A4A;
-    color: #BABB9F;
-
+    background-color: #BABB9F;
+    color: #4A4A4A;
+    font-weight: bold;
     margin: 2.5px;
 }
 
