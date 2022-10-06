@@ -90,6 +90,8 @@ function listenToKeyboard(){
 function incrementCorrectGuesses(){
     ++guillotineGlobalVariables.correctGuesses;
     if (guillotineGlobalVariables.correctGuesses === guillotineGlobalVariables.answer.length){
+        document.getElementById("guillotine-display").src = "assets/images/guillotine/07.webp";
+        document.getElementById("guillotine-display").style.border = "3px solid #15C400";
         ++guillotineGlobalVariables.winCounter;
         document.getElementById("guillotine-wins").textContent = `WIN: ${guillotineGlobalVariables.winCounter}`;
     }
