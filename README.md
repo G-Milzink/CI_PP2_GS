@@ -343,3 +343,48 @@ JSHint JavaScript Validation Service was used to validate the Javascript files. 
 </details>
 
 ### Accessabillity
+WAVE accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages passed with 0 errors or alerts.
+
+<details><summary>index.html</summary>
+<img src="docs/validation/accessabillity/index_access_valid.webp">
+</details>
+<details><summary>rps.html</summary>
+<img src="docs/validation/accessabillity/rps_access_valid.webp">
+</details>
+<details><summary>quizzit.html</summary>
+<img src="docs/validation/accessabillity/quizzit_access_valid.webp">
+</details>
+<details><summary>guillotine.html</summary>
+<img src="docs/validation/accessabillity/guillotine_access_valid.webp">
+</details>
+<details><summary>contact.html</summary>
+<img src="docs/validation/accessabillity/contact_access_valid.webp">
+</details>
+<details><summary>404.html</summary>
+<img src="docs/validation/accessabillity/404_access_valid.webp">
+</details>
+
+### Performance
+
+### Performance 
+Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. 
+
+<details><summary>index.html</summary>
+<img src="docs/validation/performance/index_performance.webp">
+</details>
+<details><summary>rps.html</summary>
+<img src="docs/validation/performance/rps_performance.webp">
+</details>
+<details><summary>quizzit.html</summary>
+<img src="docs/validation/performance/quizzit_performance.webp">
+</details>
+<details><summary>guillotine.html</summary>
+<img src="docs/validation/performance/guillotine_performance.webp">
+</details>
+<details><summary>contact.html</summary>
+<img src="docs/validation/performance/contact_performance.webp">
+</details>
+<details><summary>404.html</summary>
+<img src="docs/validation/performance/404_performance.webp">
+</details>
+
