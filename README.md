@@ -388,3 +388,68 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 <img src="docs/validation/performance/404_performance.webp">
 </details>
 
+## Testing
+
+### Performing tests on various devices
+
+### Browser compatibility
+
+### Testing user stories
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
+8.
+
+9.
+
+10.
+
+11.
+
+## Bugs
+
+## Deployment
+The website was deployed using GitHub Pages by following these steps:
+1. Go to the GitHub repository and navigate to the Settings tab.
+2. Scroll down and select Pages in the menu on the left.
+3. For the source select Branch: main
+4. The page will refresh after some time and a message wil be displayed: "Your site is published at https://g-milzink.github.io/CI_PP2_GS/
+
+You can for fork the repository by following these steps:
+1. Go to the GitHub repository
+2. Click on Fork button in upper right hand corner
+
+You can clone the repository by following these steps:
+1. Go to the GitHub repository 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory to be
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7. Press Enter to create your local clone.
+
+## Credits
+
+### Images
+- All logos and images created by G.Milzink
+
+### Code
+
+
+## Acknowledgements
+I would like to take the opportunity to thank:
+- My mentor Mo Shami for his feedback, advice, guidance and support.
+- My partner Geertje van der Zalm for her support, inspiration and patience.
+- My mother Anne Rijsdijk and her husband Mickel Pereira for allowing me to persue this dream.
+- Anyone who spends time on the internet awnsering questions and helping others to learn.

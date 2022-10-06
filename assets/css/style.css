@@ -329,11 +329,11 @@ footer {
     width: 100vw;
     height: 100vh;
     margin-top: 20vh;
-    background-color: #4A4A4A;
+    background-color: #141414;
 }
 
 #contact-heading {
-    font-size: 200%;
+    font-size: 100%;
     margin-bottom: 0;
 }
 
