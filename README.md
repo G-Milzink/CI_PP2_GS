@@ -229,3 +229,27 @@ The website consists of five pages containing 9 seperate features.
 <img src="docs/features/quizzit/ft_quizzit_wrong.webp">
 </details>
 
+### Guillotine (game)
+- loads when the user clicks the appropriate icon in the header.
+- Displays an intuitively laid out interface for playing a simple hangman type game.
+- Interactive elements have darker text against a light background to stand out. (This is consisitent throughout all three games.)
+- As soon as the page loads the user is presented with a game in progress. 
+- The user can select letters from the virtual keyboard to try and guess the word.
+- The keyboard visually represents wich letters have been guessed 
+and wether they where right or wrong. Green borders for correct guesses and red for incorrect ones.
+- Every correct guess fills in the appropriate letters in the space below the main image until the entire word is guessed and the game is won.
+- Every incorrect guess progresses a sequence of images displayed in the center of the screen until the guillotine drops and the game is lost. 
+- The 'reset' button clears the game and generates a new word. 
+
+<details><summary>Guillotine start</summary>
+<img src="docs/features/guillotine/ft_guillotine.webp">
+</details>
+<details><summary>Guillotine mid-game</summary>
+<img src="docs/features/guillotine/ft_guillotine_midgame.webp">
+</details>
+<details><summary>Guillotine win</summary>
+<img src="docs/features/guillotine/ft_guillotine_win.webp">
+</details>
+<details><summary>Guillotine lose</summary>
+<img src="docs/features/guillotine/ft_guillotine_lose.webp">
+</details>
