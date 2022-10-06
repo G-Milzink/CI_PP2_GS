@@ -294,20 +294,30 @@ and wether they where right or wrong. Green borders for correct guesses and red 
 
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass without errors or warnings.
 <details><summary>index.html</summary>
-<img src="docs/validation/index_html_valid.webp">
+<img src="docs/validation/html/index_html_valid.webp">
 </details>
 <details><summary>rps.html</summary>
-<img src="docs/validation/rps_html_valid.webp">
+<img src="docs/validation/html/rps_html_valid.webp">
 </details>
 <details><summary>quizzit.html</summary>
-<img src="docs/validation/quizzit_html_valid.webp">
+<img src="docs/validation/html/quizzit_html_valid.webp">
 </details>
 <details><summary>guillotine.html</summary>
-<img src="docs/validation/guillotine_html_valid.webp">
+<img src="docs/validation/html/guillotine_html_valid.webp">
 </details>
 <details><summary>contact.html</summary>
-<img src="docs/validation/contact_html_valid.webp">
+<img src="docs/validation/html/contact_html_valid.webp">
 </details>
 <details><summary>404.html</summary>
-<img src="docs/validation/404_html_valid.webp">
+<img src="docs/validation/html/404_html_valid.webp">
+</details>
+
+### CSS Validation
+
+The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website. All CSS passed without errors.
+<details><summary>whole page</summary>
+<img src="docs/validation/css/css_valid_wholepage.webp">
+</details>
+<details><summary>style.css</summary>
+<img src="docs/validation/css/css_valid_cssonly.webp">
 </details>
