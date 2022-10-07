@@ -406,18 +406,57 @@ The website was tested on the following browsers:
 - Microsoft Egde
 
 ### Testing user stories
+
 1. I want to choose between several games.
+
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 |Homepage|Look for information on how to select a game|See welcome message|Works as expected| 
 |Header|Click link to select a game|User is brought to appropriate page| Works as expected|
 <details><summary>screenshot</summary>
-<img src="docs/users_stories/user_story_01.webp">
+<img src="docs/user_stories/user_story_01.webp">
+</details>
+<br>
+
+2. I want to easily understand the rules of the different games.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Clear colour scheme|Observe screen for possible interractions|Notice interactive elements distinct from background | Works as expected|
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_02a.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_02b.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_02c.webp">
 </details>
 
-2.
+3. I want clear feedback when I win or lose a game.
 
-3.
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Visual feedback from game systems|Win/Lose game|Get clear feedback| Works as expected|
+|Win/lose counters|Look for score counters|Find counters at bottom of screen|Works as expected|
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_03a1.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_03a2.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_03b1.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_03b2.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_03c1.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_03c2.webp">
+</details>
 
 4.
 
