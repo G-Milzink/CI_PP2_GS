@@ -4,7 +4,8 @@ const rpsGlobalVars = {
     "rpsPlayerChoice" : '',
     "rpsAIChoice" : '',
     "rpsLoseCounter" : 0,
-    "rpsWinCounter" : 0
+    "rpsWinCounter" : 0,
+    "timerRunning" : false
 };
 
 // Wait for DOM to load then run main "game-loop":
@@ -26,7 +27,10 @@ function rpsBegin(){
     document.getElementById("player-choice").style.backgroundImage = "";
     document.getElementById("rps-outcome-display").style.color = "#BABB9F";
     document.getElementById("rps-outcome-display").textContent = 3;
-    rpsGlobalVars.rpsCountdownTimer = setInterval(rpsCountdown,1000);
+    if (rpsGlobalVars.timerRunning === false){
+        rpsGlobalVars.timerRunning = true;
+        rpsGlobalVars.rpsCountdownTimer = setInterval(rpsCountdown,1000);
+    }
 }
 
 /**
@@ -40,6 +44,7 @@ function rpsBegin(){
     } else {
         document.getElementById("rps-outcome-display").textContent = "Go!";
         clearInterval(rpsGlobalVars.rpsCountdownTimer);
+        rpsGlobalVars.timerRunning = false;
         rpsAwaitUserInput();
     }
 }
