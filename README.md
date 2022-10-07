@@ -164,7 +164,7 @@ The website consists of five pages containing 9 seperate features.
 - user stories covered: 1, 7
 
 <details><summary>Header image</summary>
-<img src="docs/features/header.webp">
+<img src="docs/features/ft_header.webp">
 </details>
 
 ### Footer
@@ -239,7 +239,8 @@ The website consists of five pages containing 9 seperate features.
 - The keyboard visually represents wich letters have been guessed 
 and wether they where right or wrong. Green borders for correct guesses and red for incorrect ones.
 - Every correct guess fills in the appropriate letters in the space below the main image until the entire word is guessed and the game is won.
-- Every incorrect guess progresses a sequence of images displayed in the center of the screen until the guillotine drops and the game is lost. 
+- Every incorrect guess progresses a sequence of images displayed in the center of the screen until the guillotine drops and the game is lost.
+- Once the round is lost or won the keyboard will dissapear so no new letters can be chosen until the game is reset.
 - The 'reset' button clears the game and generates a new word. 
 - user stories covered: 2, 3, 8, 9
 
