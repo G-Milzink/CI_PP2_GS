@@ -600,9 +600,6 @@ The website was tested on the following browsers:
 ### Contact form
 * The textarea field will move off screen when in focus on smaller screen sizes.
 * Possible solution: Adjes responsive design to keep textarea field in view on smaller screens.
-### Rock Paper Scissors
-* Clicking the "start" button more then once in quick succesion creates mutiple timers in the background wich causes incinsistent behaviour for the countdown display.
-* Possible solution: Implement conditional statement to check if a timer already exists.
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
