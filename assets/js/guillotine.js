@@ -37,6 +37,7 @@ function grabRandomWord(){
  */
 function buildKeyboard(){
     let keyboard = document.getElementById("keyboard");
+    keyboard.style.visibility = "visible";
     let alphabet = "ABCDEFGHJIKLMNOPQRSTUVWXYZ";
     let letters = Array.from(alphabet);
     let i = 0;
@@ -92,6 +93,7 @@ function listenToKeyboard(){
 function incrementCorrectGuesses(){
     ++guillotineGlobalVariables.correctGuesses;
     if (guillotineGlobalVariables.correctGuesses === guillotineGlobalVariables.answer.length){
+        document.getElementById("keyboard").style.visibility = "hidden";
         document.getElementById("guillotine-display").src = "assets/images/guillotine/07.webp";
         document.getElementById("guillotine-display").style.border = "3px solid #15C400";
         ++guillotineGlobalVariables.winCounter;
@@ -142,6 +144,7 @@ function guessWrong(){
             document.getElementById("guillotine-display").src = "assets/images/guillotine/06.webp";
             ++guillotineGlobalVariables.loseCounter;
             document.getElementById("guillotine-losses").textContent = `LOSE: ${guillotineGlobalVariables.loseCounter}`;
+            document.getElementById("keyboard").style.visibility = "hidden";
             break; 
     }
 }
