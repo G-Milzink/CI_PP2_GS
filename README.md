@@ -93,6 +93,7 @@ The colour scheme consists of mostly neutral colours the Dark grey background pr
 - Yellow and white are used to show when an element has been clicked.
 - Red and green are used to provide clear recognizable feedback to the user about the different win/lose states of the games.
 - Minor variations of the basic gray tints are used to provide feedback on the keyboard for the Guillotine game.
+- Colourscheme was tested for contrast using WebAIM (https://webaim.org/resources/contrastchecker/). 
 
 <img src="docs/colours.webp">
 
