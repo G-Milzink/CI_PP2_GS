@@ -38,6 +38,11 @@ footer {
     height: 100px;
 }
 
+.spacer {
+    visibility: hidden;
+    height: 0;
+}
+
 /* index.html specific styling */
 #greeting {
     position: relative;
@@ -480,5 +485,12 @@ input, textarea {
         #contact-wrapper {
             font-size: 170%;
             margin: 5px auto;
+        }
+    }
+
+
+    @media screen and (min-height: 840px){
+        .spacer {
+            height: 10vh;
         }
     }
