@@ -81,7 +81,7 @@ The goal of this project was to create a website where the user can play a few s
 
 7. I want the user to be able to choose between Rock Paper Scissors, A quiz and a Hangman game.
 8. I want user to easily understand the different games.
-9. I want my game to be fully responsive and provide feedback
+9. I want my game to provide clear feedback to the user.
 10. I want the user to not have to use the back button when they receive a 404 error.
 11. I want user to be able to send me a message and provide feedback.
 
@@ -458,7 +458,11 @@ The website was tested on the following browsers:
 <img src="docs/user_stories/user_story_03c2.webp">
 </details>
 
-4.
+4. I want to be able to play the games on any device.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+
 
 5.
 
