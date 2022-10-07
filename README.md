@@ -544,8 +544,6 @@ The website was tested on the following browsers:
 
 9. I want my game to be fully responsive and provide feedback
 
-10. I want the user to not have to use the back button when they receive a 404 error.
-
 |Visual feedback from game systems|Win/Lose game|Get clear feedback| Works as expected|
 |Win/lose counters|Look for score counters|Find counters at bottom of screen|Works as expected|
 <details><summary>Screenshot</summary>
@@ -567,6 +565,8 @@ The website was tested on the following browsers:
 <img src="docs/user_stories/user_story_03c2.webp">
 </details>
 <br>
+
+10. I want the user to not have to use the back button when they receive a 404 error.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
