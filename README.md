@@ -603,9 +603,6 @@ The website was tested on the following browsers:
 ### Rock Paper Scissors
 * Clicking the "start" button more then once in quick succesion creates mutiple timers in the background wich causes incinsistent behaviour for the countdown display.
 * Possible solution: Implement conditional statement to check if a timer already exists.
-### guillotine
-* After winning/Losing the game, clicking the keyboard will keep exposing letters even though the round has ended.
-* Possible solution: Remove keyboard from view once round has been lost/won.
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
