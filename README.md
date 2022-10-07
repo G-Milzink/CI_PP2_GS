@@ -631,11 +631,14 @@ You can clone the repository by following these steps:
 - All logos and images created by G.Milzink
 
 ### Code
-
+Code to send email from form using emaijs taken (and adapted) from tutorial:
+ * "Contact Form with Email Js | Send Emails using JavaScript through Email Js | Email Js Tutorial"
+ * by ALTERCODES
+ * https://www.youtube.com/watch?v=5EZsRnJpUNU&t=1s&ab_channel=ALTERCODES
 
 ## Acknowledgements
 I would like to take the opportunity to thank:
 - My mentor Mo Shami for his feedback, advice, guidance and support.
 - My partner Geertje van der Zalm for her support, inspiration and patience.
-- My mother Anne Rijsdijk and her husband Mickel Pereira for allowing me to persue this dream.
+- My mother Anne Rijsdijk and her husband Mickel Pereira for helping me persue this dream.
 - Anyone who spends time on the internet awnsering questions and helping others to learn.
