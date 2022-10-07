@@ -432,6 +432,7 @@ The website was tested on the following browsers:
 <details><summary>Screenshot</summary>
 <img src="docs/user_stories/user_story_02c.webp">
 </details>
+<br>
 
 3. I want clear feedback when I win or lose a game.
 
@@ -457,26 +458,137 @@ The website was tested on the following browsers:
 <details><summary>Screenshot</summary>
 <img src="docs/user_stories/user_story_03c2.webp">
 </details>
+<br>
 
 4. I want to be able to play the games on any device.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+|Responsive Design|Load website on mobile device|Content scales appropriately|works as expected|
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_04a.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_04b.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_04c.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_04d.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_04e.webp">
+</details>
+<br>
 
+5. I want to be able to get in touch with the developer.
 
-5.
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Footer|Click contact link|Navigate to contact page|Works as expected|
+|contact page|Navigate to contact page|Find contact form|Works as expected|
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_05a.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_05b.webp">
+</details>
+<br>
 
-6.
+6. I want confirmation that I filled out the contact form correctly.
 
-7.
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|contact page|Fill out contact form|Receive confirmation|Works as expected|
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_06.webp">
+</details>
+<br>
 
-8.
+7. I want the user to be able to choose between Rock Paper Scissors, A quiz and a Hangman game.
 
-9.
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Homepage|Look for information on how to select a game|See welcome message|Works as expected| 
+|Header|Click link to select a game|User is brought to appropriate page| Works as expected|
+<details><summary>screenshot</summary>
+<img src="docs/user_stories/user_story_07a.webp">
+</details>
+<details><summary>screenshot</summary>
+<img src="docs/user_stories/user_story_07b.webp">
+</details>
+<details><summary>screenshot</summary>
+<img src="docs/user_stories/user_story_07c.webp">
+</details>
+<details><summary>screenshot</summary>
+<img src="docs/user_stories/user_story_07d.webp">
+</details>
+<br>
 
-10.
+8. I want the user to easily understand the different games.
 
-11.
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Clear colour scheme|Observe screen for possible interractions|Notice interactive elements distinct from background | Works as expected|
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_02a.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_02b.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_02c.webp">
+</details>
+<br>
+
+9. I want my game to be fully responsive and provide feedback
+
+10. I want the user to not have to use the back button when they receive a 404 error.
+
+|Visual feedback from game systems|Win/Lose game|Get clear feedback| Works as expected|
+|Win/lose counters|Look for score counters|Find counters at bottom of screen|Works as expected|
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_03a1.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_03a2.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_03b1.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_03b2.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_03c1.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_03c2.webp">
+</details>
+<br>
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Custom 404 page| Navigate to non existent url|Display custom 404 page|Works as expected|
+<details><summary>screenshot</summary>
+<img src="docs/user_stories/user_story_10.webp">
+</details>
+<br>
+
+11. I want user to be able to send me a message and provide feedback.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Footer|Click contact link|Navigate to contact page|Works as expected|
+|contact page|Navigate to contact page|Find contact form|Works as expected|
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_11a.webp">
+</details>
+<details><summary>Screenshot</summary>
+<img src="docs/user_stories/user_story_11b.webp">
+</details>
+<br>
 
 ## Bugs
 
