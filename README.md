@@ -406,7 +406,14 @@ The website was tested on the following browsers:
 - Microsoft Egde
 
 ### Testing user stories
-1.
+1. I want to choose between several games.
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Homepage|Look for information on how to select a game|See welcome message|Works as expected| 
+|Header|Click link to select a game|User is brought to appropriate page| Works as expected|
+<details><summary>screenshot</summary>
+<img src="docs/users_stories/user_story_01.webp">
+</details>
 
 2.
 
