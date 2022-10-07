@@ -102,7 +102,7 @@ The 'Roboto' font is used to display all the main content across the site. It wa
 
 ### Structure
 
-The websites main structure has been kept simple and clear without any unnecesary elements to avoid clutter and improve accesibillity.
+The websites main structure has been kept simple and clear without any unnecesary elements to avoid clutter and improve accessibillity.
 
 - The site consist of the following five pages:
   - Welcome screen pointing users to the game selection in the header and the contact link in the footer.
@@ -143,7 +143,8 @@ The websites main structure has been kept simple and clear without any unnecesar
 ### Tools & Libraries
 
 - [Blender](https://www.blender.org/) Was used to create logo's and game images.
-- [Krita](https://krita.org/) Was used to crop/resize/reformat images.
+- [Gimp](https://www.gimp.org/) Was used to crop/resize/convert images.
+- [Krita](https://krita.org/) Was used to highlight cerain sections of images.
 - [Swatcher](https://swatcherapp.com/) Was used to construct the colour scheme.
 - [EmailJS](https://www.emailjs.com) Was used to send email from the contact form.
 - [Favicon.io](https://favicon.io) Was used for making creating the websites favicons.
@@ -390,9 +391,19 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 
 ## Testing
 
-### Performing tests on various devices
+### Performing tests on various devices 
+The website was tested on the following devices:
+- Samsung A40 smartphone
+- HP 14s-fq0050nd AMD Ryzen 3 3250U 14" laptop
+- Generic Desktop PC
 
-### Browser compatibility
+Testing with Google Chrome Develepor Tools Device Toggling reveals that the site remains functional and esthetically consistent across all devices.
+
+### Browser compatability
+The website was tested on the following browsers:
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Egde
 
 ### Testing user stories
 1.
