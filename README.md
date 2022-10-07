@@ -598,8 +598,8 @@ The website was tested on the following browsers:
   <em>resembles</em> an email adres: [abcdef]@[abcdef]. This allows for incomplete/incorrect email adresses to be used.
 * Possible solution: Implement actual validation to confirm the entered email adress.
 ### Contact form
-* The textarea field will move off screen when in focus on smaller screen sizes.
-* Possible solution: Adjes responsive design to keep textarea field in view on smaller screens.
+* On mobile devices the soft keyboard covers the message text-input area.
+* Possible solution: Adjust responsive design to keep textarea field in view on smaller screens.
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
@@ -637,4 +637,4 @@ I would like to take the opportunity to thank:
 - My mentor Mo Shami for his feedback, advice, guidance and support.
 - My partner Geertje van der Zalm for her support, inspiration and patience.
 - My mother Anne Rijsdijk and her husband Mickel Pereira for helping me persue this dream.
-- Anyone who spends time on the internet awnsering questions and helping others to learn.
+- Anyone who spends time on the internet making tutorials, awnsering questions or otherwise helping others to learn.
