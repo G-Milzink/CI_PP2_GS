@@ -591,6 +591,19 @@ The website was tested on the following browsers:
 <br>
 
 ## Bugs
+### Contact form
+* Currently the form will allow submission if all fields are filled out and the value of the email field 
+  <em>resembles</em> an email adres: [abcdef]@[abcdef]. This allows for incomplete/incorrect email adresses to be used.
+* Possible solution: Implement actual validation to confirm the entered email adress.
+### Contact form
+* The textarea field will move off screen when in focus on smaller screen sizes.
+* Possible solution: Adjes responsive design to keep textarea field in view on smaller screens.
+### Rock Paper Scissors
+* Clicking the "start" button more then once in quick succesion creates mutiple timers in the background wich causes incinsistent behaviour for the countdown display.
+* Possible solution: Implement conditional statement to check if a timer already exists.
+### guillotine
+* After winning/Losing the game, clicking the keyboard will keep exposing letters even though the round has ended.
+* Possible solution: Remove keyboard from view once round has been lost/won.
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
