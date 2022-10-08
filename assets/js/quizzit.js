@@ -24,7 +24,8 @@ const quizzitGlobalVariables = {
     "SCORE" : 0,
     "WRONG" : 0,
     "ALLOW_SUBMIT" : false,
-    "ANSWERED" : false
+    "ALLOW_SELECT" : true,
+    "ANSWERED" : false,
 };
 
 // Assign randomized values to 'global' variables.
@@ -78,6 +79,7 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
  function riddleSelection(){
     document.getElementById("riddle-display").style.color = "#BABB9F";
     quizzitGlobalVariables.ANSWERED = false;
+    quizzitGlobalVariables.ALLOW_SELECT = true;
     var answer;
     if (quizzitGlobalVariables.RANDOMIZED_RIDDLES.length > 0) {
             document.getElementById("riddle-display").textContent = RIDDLES[quizzitGlobalVariables.RANDOMIZED_RIDDLES[0]][0];
@@ -93,7 +95,10 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
             for (button of buttons){
                     button.textContent = "...";
             }
-            alert("You have answered all our riddles!");
+            quizzitGlobalVariables.ALLOW_SELECT = false;
+            quizzitGlobalVariables.ALLOW_SUBMIT = false;
+            document.getElementById("riddle-display").style.color = "yellow"
+            document.getElementById("riddle-display").innerText = "You have answered all our riddles! \n Feel free to try again!"
     } 
 }
 
@@ -119,8 +124,11 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
  * Assign chosen answer to global vaiable.
  */
  function selectAnswer(){
-    quizzitGlobalVariables.CHOSEN_ANSWER = this.textContent;
-    quizzitGlobalVariables.ALLOW_SUBMIT = true;
+        if (quizzitGlobalVariables.ALLOW_SELECT === true){
+                console.log(quizzitGlobalVariables.ALLOW_SELECT)
+                quizzitGlobalVariables.CHOSEN_ANSWER = this.textContent;
+                quizzitGlobalVariables.ALLOW_SUBMIT = true;
+        }
 }
 
 /**
@@ -145,6 +153,6 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
                     button.textContent = "...";
             }
     }
-    quizzitGlobalVariables.ALLOW_SUBMIT = false;
+    quizzitGlobalVariables.ALLOW_SELECT = false;
     quizzitGlobalVariables.ANSWERED = true;
 }
