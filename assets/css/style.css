@@ -74,7 +74,7 @@ footer {
     font-weight: bold;
 
     border: 3px solid #BABB9F;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 
 .rps-selection {
@@ -86,7 +86,7 @@ footer {
     background-color: #BABB9F;
     color: #4A4A4A;
     border: 3px solid #4A4A4A;
-    border-radius: 5%;
+    border-radius: 5px;
     font-weight: bold;
 }
 
@@ -116,8 +116,8 @@ footer {
 
     background-color: #BABB9F;
     color: #4A4A4A;
-    border: 3px solid #BABB9F;
-    border-radius: 5%;
+    border: 3px solid #4A4A4A;
+    border-radius: 3px;
 }
 
 #rps-start:active {
@@ -147,8 +147,8 @@ footer {
 
     background-color: #BABB9F;
     color: #4A4A4A;
-    border: 3px solid #BABB9F;
-    border-radius: 5%;
+    border: 3px solid #4A4A4A;
+    border-radius: 3px;
 }
 
 #riddle-me:active {
@@ -171,7 +171,7 @@ footer {
     background-color: #BABB9F;
     color: #4A4A4A;
     border: 3px solid #4A4A4A;
-    border-radius: 5%;
+    border-radius: 3px;
     margin: 5px;
     font-weight: bold;
 }
@@ -199,8 +199,8 @@ footer {
     font-weight: bold;
     background-color: #BABB9F;
     color: #4A4A4A;
-    border: 3px solid #BABB9F;
-    border-radius: 5%;
+    border: 3px solid #4A4A4A;
+    border-radius: 3px;
     margin: 10px;
 }
 
@@ -288,8 +288,8 @@ footer {
 
     background-color: #BABB9F;
     color: #4A4A4A;
-    border: 3px solid #BABB9F;
-    border-radius: 5%;
+    border: 3px solid #4A4A4A;
+    border-radius: 3px;
 }
 
 #new-word:active {
@@ -317,8 +317,8 @@ footer {
 #back-home {
     background-color: #BABB9F;
     color: #4A4A4A;
-    border: 3px solid #BABB9F;
-    border-radius: 5%;
+    border: 3px solid #4A4A4A;
+    border-radius: 3px;
     margin-top: 25px;
     font-size: 100%;
     font-weight: bold;
@@ -356,8 +356,8 @@ footer {
 input, textarea {
     min-width: 300px;
     width: 20%;
-    border: 3px solid #BABB9F;
-    border-radius: 3%;
+    border: 3px solid #4A4A4A;
+    border-radius: 3px;
     font-size: 80%;
     font-family: 'Roboto', sans-serif;
     background-color: #4A4A4A;
@@ -373,8 +373,8 @@ input, textarea {
     font-weight: bold;
     background-color: #BABB9F;
     color: #4A4A4A;
-    border: 3px solid #BABB9F;
-    border-radius: 3%;
+    border: 3px solid #4A4A4A;
+    border-radius: 3px;
     font-size: 80%;
 }
 
