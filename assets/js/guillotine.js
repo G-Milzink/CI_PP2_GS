@@ -54,7 +54,7 @@ function buildKeyboard(){
     let letters = Array.from(alphabet);
     let i = 0;
     while (i < letters.length){
-        key = letters[i]; i++;
+        let key = letters[i]; i++;
         keyboard.innerHTML += `<button class="keys" data-type="`+key+`">`+key+`</button>`;
     }
 }
@@ -78,7 +78,7 @@ function buildAnswerDisplay(){
  */
 function listenToKeyboard(){
     let keyboard = document.getElementsByClassName("keys");
-    for (keys of keyboard){
+    for (let keys of keyboard){
         keys.addEventListener("click", function(){
             let answer = guillotineGlobalVariables.answer;
             let letter = this.getAttribute("data-type");
@@ -86,8 +86,8 @@ function listenToKeyboard(){
                 this.style.backgroundColor = "#747474";
                 this.style.border = "3px solid #15C400";
                 this.setAttribute("data-type", "0");
-                positions = (guessCorrect(letter,answer));
-                for (i of positions){
+                let positions = (guessCorrect(letter,answer));
+                for (let i of positions){
                     document.getElementById("pos"+i).textContent = letter;
                     incrementCorrectGuesses();
                 }
@@ -123,7 +123,7 @@ function incrementCorrectGuesses(){
  */
 function guessCorrect(letter,answer){
     let position = [];
-    for (i = 0; i < answer.length; i++){
+    for (let i = 0; i < answer.length; i++){
         if (letter === answer[i]){
             position.push(i+1);
         }

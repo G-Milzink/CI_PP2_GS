@@ -61,7 +61,7 @@ function rpsBegin(){
  */
 function rpsAwaitUserInput(){
     let selectors = document.getElementsByClassName("rps-selection");
-    for (selector of selectors){
+    for (let selector of selectors){
         selector.addEventListener("click", function(){
             if (document.getElementById("rps-outcome-display").textContent === "Go!" && this.getAttribute("data-type") === "rock"){
                 document.getElementById("player-choice").style.backgroundImage = "url(assets/images/rps/rock.webp)";

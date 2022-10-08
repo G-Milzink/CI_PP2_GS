@@ -341,9 +341,6 @@ JSHint JavaScript Validation Service was used to validate the Javascript files. 
 <details><summary>contact.js</summary>
 <img src="docs/validation/js/contact_js_valid.webp">
 </details>
-<details><summary>game-data.js</summary>
-<img src="docs/validation/js/game-data_js_valid.webp">
-</details>
 
 ### Accessability
 WAVE accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages passed with 0 errors or alerts.

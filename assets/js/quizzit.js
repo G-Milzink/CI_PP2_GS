@@ -35,7 +35,8 @@ quizzitGlobalVariables.RANDOMIZED_ANSWERS = generateListOfAnswers(FALSE_ANSWERS)
 document.getElementById("riddle-me").addEventListener("click",riddleSelection);
 
 //Assign anser-buttons to global array
-const BUTTONS = document.getElementsByClassName("answer-button"); 
+const BUTTONS = document.getElementsByClassName("answer-button");
+let button; 
 for (button of BUTTONS){
         button.addEventListener("click", selectAnswer);
 }
@@ -50,7 +51,7 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
  */
  function generateListOfRiddles(_array){
     let generated = [];
-    for (i = 0; i < _array.length; i++){
+    for (let i = 0; i < _array.length; i++){
             generated[i] = i;
     }
     generated.sort(() => Math.random() - 0.5);
@@ -64,7 +65,7 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
  */
  function generateListOfAnswers(_array){
     let generated = [];
-    for (i = 0; i < _array.length; i++){
+    for (let i = 0; i < _array.length; i++){
             generated[i] = i;
     }
     generated.sort(() => Math.random() - 0.5);
