@@ -26,6 +26,7 @@ const quizzitGlobalVariables = {
     "ALLOW_SUBMIT" : false,
     "ALLOW_SELECT" : true,
     "ANSWERED" : false,
+    "ALL_RIDDLES_ANSWERED" : false
 };
 
 // Assign randomized values to 'global' variables.
@@ -80,6 +81,12 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
     document.getElementById("riddle-display").style.color = "#BABB9F";
     quizzitGlobalVariables.ANSWERED = false;
     quizzitGlobalVariables.ALLOW_SELECT = true;
+    if (quizzitGlobalVariables.ALL_RIDDLES_ANSWERED === true){
+        quizzitGlobalVariables.SCORE = 0;
+        quizzitGlobalVariables.WRONG = 0;
+        document.getElementById("quizzit-correct").textContent = "Correct: " + quizzitGlobalVariables.SCORE;
+        document.getElementById("quizzit-wrong").textContent = "Wrong: " + quizzitGlobalVariables.WRONG;
+    }
     var answer;
     if (quizzitGlobalVariables.RANDOMIZED_RIDDLES.length > 0) {
             document.getElementById("riddle-display").textContent = RIDDLES[quizzitGlobalVariables.RANDOMIZED_RIDDLES[0]][0];
@@ -90,15 +97,17 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
     } else {
             quizzitGlobalVariables.RANDOMIZED_RIDDLES = generateListOfRiddles(RIDDLES);
             quizzitGlobalVariables.RANDOMIZED_ANSWERS = generateListOfAnswers(FALSE_ANSWERS);
+
             document.getElementById("riddle-display").textContent = ".......?";
             let buttons = document.getElementsByClassName("answer-button");
-            for (button of buttons){
-                    button.textContent = "...";
-            }
+
+            for (button of buttons){button.textContent = "...";}
+
             quizzitGlobalVariables.ALLOW_SELECT = false;
             quizzitGlobalVariables.ALLOW_SUBMIT = false;
+            quizzitGlobalVariables.ALL_RIDDLES_ANSWERED = true;
             document.getElementById("riddle-display").style.color = "yellow"
-            document.getElementById("riddle-display").innerText = "You have answered all our riddles! \n Feel free to try again!"
+            document.getElementById("riddle-display").innerText = "You have answered all our riddles! \n Feel free to try again! \n (your score will reset.)"
     } 
 }
 
