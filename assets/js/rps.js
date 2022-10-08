@@ -1,4 +1,10 @@
-// Declare global variables:
+// Create array with possible outcomes.
+const outcomeTable = [];
+    outcomeTable[0] = ["DRAW", "WIN",  "LOSE"];
+    outcomeTable[1] = ["LOSE", "DRAW", "WIN"];
+    outcomeTable[2] = ["WIN",  "LOSE", "DRAW"];
+
+// Wrap variables in named object to avoid global scope:
 const rpsGlobalVars = {
     "rpsCountdownTimer" : '',
     "rpsPlayerChoice" : '',

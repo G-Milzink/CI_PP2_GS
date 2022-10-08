@@ -1,4 +1,16 @@
-// Names object to contain "global" variables:
+// Create array of words to guess for "Guillotine game."
+const WORDS = ["ABSOLUTE", 
+                "BATHROOM", 
+                "CHAMPION", 
+                "DATABASE",
+                "BANANAS", 
+                "BICYCLE", 
+                "RESTAURANT", 
+                "DOLPHIN", 
+                "AMENITIES",
+                "RAINFOREST"];
+
+// Wrap variables in named object to avoid global scope.
 const guillotineGlobalVariables = {
     "answer" : '',
     "wrongGuesses" : 0,
@@ -27,7 +39,7 @@ function runGuillotineGame(){
  * @returns Array containing all letters of random words as seperate values.
  */
 function grabRandomWord(){
-    let rand = Math.floor(Math.random()*WORDS.length);
+    let rand = Math.floor(Math.random()* WORDS.length);
     let word = Array.from(WORDS[rand]);
     return word;
 }

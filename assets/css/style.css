@@ -40,7 +40,7 @@ footer {
 
 .spacer {
     visibility: hidden;
-    height: 0;
+    height: 2.5vh;
 }
 
 /* index.html specific styling */
@@ -492,7 +492,7 @@ input, textarea {
     }
     @media screen and (min-height: 840px){
         .spacer {
-            height: 12.5vh;
+            height: 7.5vh;
         }
     }
 
