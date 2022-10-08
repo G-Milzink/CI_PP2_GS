@@ -340,7 +340,9 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 
 ### JavaScript Validation
 
-JSHint JavaScript Validation Service was used to validate the Javascript files. No issues of importance where found.
+JSHint JavaScript Validation Service was used to validate the Javascript files. No problems where reported.
+
+A single warning was generated for contact.js flagging "emailjs" as an undefined variable. This is part of the Emailjs integration and refers to the emailjs specific script wic is loaded by contact.html before loading contact.js
 
 <details><summary>rps.js</summary>
 <img src="docs/validation/js/rps_js_valid.webp">
