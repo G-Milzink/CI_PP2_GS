@@ -489,13 +489,13 @@ input, textarea {
     }
 
 
-    @media screen and (min-height: 700px){
+    @media screen and (min-height: 800px){
         .spacer {
-            height: 5vh;
+            height: 2.5vh;
         }
     }
     @media screen and (min-height: 840px){
         .spacer {
-            height: 10vh;
+            height: 12.5vh;
         }
     }
