@@ -425,10 +425,6 @@ input, textarea {
         #quizzit-heading {
             font-size: 180%;
         }
-        .quizzit-footer-adjust{
-            position: absolute; 
-            bottom: 0;
-        }
         #riddle-display {
             font-size: 170%;
             max-width: 80%;
@@ -497,5 +493,14 @@ input, textarea {
     @media screen and (min-height: 840px){
         .spacer {
             height: 12.5vh;
+        }
+    }
+
+    @media screen and (max-height: 540px) {
+        * {
+            overflow-y: scroll;
+        }
+        #rps-game-area, #quizzit-game-area, #contact-wrapper, #guillotine-game-area {
+            margin-bottom: 65px;
         }
     }
