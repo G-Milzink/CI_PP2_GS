@@ -99,7 +99,7 @@ The colour scheme consists of mostly neutral colours the Dark grey background pr
 
 ### Font
 
-The 'Roboto' font is used to display all the main content across the site. It was chosen for readabillity and aesthetics. A simple straightforward font that works well with the colour scheme.
+The 'Roboto' font is used to display all the main content across the site. It was chosen for readability and aesthetics. A simple straightforward font that works well with the colour scheme.
 
 ### Structure
 
@@ -345,26 +345,26 @@ JSHint JavaScript Validation Service was used to validate the Javascript files. 
 <img src="docs/validation/js/game-data_js_valid.webp">
 </details>
 
-### Accessabillity
+### Accessability
 WAVE accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages passed with 0 errors or alerts.
 
 <details><summary>index.html</summary>
-<img src="docs/validation/accessabillity/index_access_valid.webp">
+<img src="docs/validation/accessability/index_access_valid.webp">
 </details>
 <details><summary>rps.html</summary>
-<img src="docs/validation/accessabillity/rps_access_valid.webp">
+<img src="docs/validation/accessability/rps_access_valid.webp">
 </details>
 <details><summary>quizzit.html</summary>
-<img src="docs/validation/accessabillity/quizzit_access_valid.webp">
+<img src="docs/validation/accessability/quizzit_access_valid.webp">
 </details>
 <details><summary>guillotine.html</summary>
-<img src="docs/validation/accessabillity/guillotine_access_valid.webp">
+<img src="docs/validation/accessability/guillotine_access_valid.webp">
 </details>
 <details><summary>contact.html</summary>
-<img src="docs/validation/accessabillity/contact_access_valid.webp">
+<img src="docs/validation/accessability/contact_access_valid.webp">
 </details>
 <details><summary>404.html</summary>
-<img src="docs/validation/accessabillity/404_access_valid.webp">
+<img src="docs/validation/accessability/404_access_valid.webp">
 </details>
 
 ### Performance
