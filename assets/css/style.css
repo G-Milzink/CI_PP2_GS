@@ -489,6 +489,11 @@ input, textarea {
     }
 
 
+    @media screen and (min-height: 700px){
+        .spacer {
+            height: 5vh;
+        }
+    }
     @media screen and (min-height: 840px){
         .spacer {
             height: 10vh;
