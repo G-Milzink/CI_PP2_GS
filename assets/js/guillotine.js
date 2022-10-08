@@ -61,7 +61,7 @@ function buildAnswerDisplay(){
 }
 
 /**
- * Listen for user input, check if chosenletter is included in answer and execute
+ * Listen for user input, check if chosen letter is included in answer and execute
  * relevant function.
  */
 function listenToKeyboard(){
@@ -73,12 +73,14 @@ function listenToKeyboard(){
             if (answer.includes(letter)){
                 this.style.backgroundColor = "#747474";
                 this.style.border = "3px solid #15C400";
+                this.setAttribute("data-type", "0");
                 positions = (guessCorrect(letter,answer));
                 for (i of positions){
                     document.getElementById("pos"+i).textContent = letter;
                     incrementCorrectGuesses();
                 }
-            } else {
+            } else if (this.getAttribute("data-type") !== "0"){
+                this.setAttribute("data-type", "0");
                 guessWrong();
                 this.style.backgroundColor = "#272626";
                 this.style.border = "3px solid red";
