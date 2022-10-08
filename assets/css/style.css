@@ -67,7 +67,7 @@ footer {
 }
 
 #rps-outcome-display {
-    width: 150px;
+    min-width: 100px;
     margin: 10px auto 10px auto;
 
     font-size: 200%;
