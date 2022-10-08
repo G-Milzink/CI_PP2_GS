@@ -609,9 +609,6 @@ The website was tested on the following browsers:
 * Currently the form will allow submission if all fields are filled out and the value of the email field 
   <em>resembles</em> an email adres: [abcdef]@[abcdef]. This allows for incomplete/incorrect email adresses to be used.
 * Possible solution: Implement actual validation to confirm the entered email adress.
-### Contact form
-* On mobile devices the soft keyboard covers the message text-input area.
-* Possible solution: Adjust responsive design to keep textarea field in view on smaller screens.
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
