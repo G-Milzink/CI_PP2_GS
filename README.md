@@ -18,13 +18,22 @@
     - [Site Owner](#site-owner)
   - [Design](#design)
     - [Colour Scheme](#colour-scheme)
-    - [Fonts](#fonts)
+    - [Font](#font)
     - [Structure](#structure)
     - [Wireframes](#wireframes)
   - [Technologies Used](#technologies-used)
     - [Languages](#languages)
-    - [Frameworks, Libraries & Tools](#frameworks-libraries--tools)
+    - [Libraries & Tools](#libraries--tools)
   - [Features](#features)
+    - [Header](#header)
+    - [Footer](#footer)
+    - [Home (Welcome screen)](#home-welcome-screen)
+    - [Rock Paper Scissors (game)](#rock-paper-scissors-game)
+    - [Quizzit (game)](#quizzit-game)
+    - [Guillotine (game)](#guillotine-game)
+    - [Contact](#contact)
+    - [Form Confirmation](#form-confirmation)
+    - [404 Page](#404-page)
   - [Validation](#validation)
     - [HTML Validation](#html-validation)
     - [CSS Validation](#css-validation)
@@ -43,6 +52,10 @@
 ## Project Goals
 
 The goal of this project was to create a website where the user can play a few simple games to pass time.
+
+### User Goals
+
+- Play one or more simple games to pass time.
 
 ### Site Owner Goals
 
@@ -141,7 +154,7 @@ The websites main structure has been kept simple and clear without any unnecesar
 - CSS
 - JavaScript
 
-### Tools & Libraries
+### Libraries & Tools
 
 - [Blender](https://www.blender.org/) Was used to create logo's and game images.
 - [Gimp](https://www.gimp.org/) Was used to crop/resize/convert images.
@@ -282,7 +295,7 @@ and wether they where right or wrong. Green borders for correct guesses and red 
 <img src="docs/features/contact/ft_contact_thanks.webp">
 </details>
 
-### 404 
+### 404 Page
 - Custom 404 page loads when the user tries to navigate to a non-existing url. 
 - The user is presented with a short apology and a link back to the homepage.
 - user story covered: 10
@@ -325,7 +338,7 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 <img src="docs/validation/css/css_valid_cssonly.webp">
 </details>
 
-### Javascript
+### JavaScript Validation
 
 JSHint JavaScript Validation Service was used to validate the Javascript files. No issues of importance where found.
 
@@ -342,7 +355,7 @@ JSHint JavaScript Validation Service was used to validate the Javascript files. 
 <img src="docs/validation/js/contact_js_valid.webp">
 </details>
 
-### Accessability
+### Accessibility
 WAVE accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages passed with 0 errors or alerts.
 
 <details><summary>index.html</summary>
@@ -398,7 +411,7 @@ The website was tested on the following devices:
 
 Testing with Google Chrome Develepor Tools Device Toggling reveals that the site remains functional and esthetically consistent across all devices.
 
-### Browser compatability
+### Browser compatibility
 The website was tested on the following browsers:
 - Google Chrome
 - Mozilla Firefox
