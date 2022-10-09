@@ -5,6 +5,11 @@ RIDDLES[1] = ["I have seas with no water, coast with no sand, towns without peop
 RIDDLES[2] = ["Often will I spin a tale, never will I charge a fee. I'll amuse you an entire eve, but, alas you wont remember me. What am I?", "A Dream"];
 RIDDLES[3] = ["What does it have in it pocketsessss?", "A Ring"];
 RIDDLES[4] = ["I have roots that no one sees. I am taller then the trees. Up and up I go. And yet I never grow. What am i?", "A Mountain"];
+RIDDLES[5] = ["I come out at night without being called. I’m gone in the morning, without being stolen. What am I?", "A Star"];
+RIDDLES[6] = ["I have keys, but no locks. I have space, but no room. You can enter, but it won’t get you inside. What am I?","A Keyboard"];
+RIDDLES[7] = ["I am not alive, but I grow; I don't have lungs, but I need air; I don't have a mouth, but water kills me. What am I?","A Fire"];
+RIDDLES[8] = ["My life can be measured in hours, I serve by being devoured. Thin, I am quick. Fat, I am slow. Wind is my foe. What am I?", "A Candle"];
+RIDDLES[9] = ["You can touch me, You can break me, You should win me if you want to be mine.", "A Heart"];
 
 // Create array of "false" answers (three false answers needed per riddle!).
 // !!False answers can NOT be the same word as ANY correct answer!!
@@ -12,7 +17,12 @@ const FALSE_ANSWERS = ["A Tree", "A Cloud", "A Journey",
                         "A Hammer","The Sea", "The Sky",
                         "A Foot", "An Arm", "A Leg",
                         "A Vision", "A Lake", "An Egg",
-                        "The Grass", "The Ground", "A Sword"
+                        "The Grass", "The Ground", "A Sword",
+                        "A Tree", "A Bird", "A Glass",
+                        "A Child", "The Weather", "A House",
+                        "A Family", "A Storm", "A Mirror",
+                        "A Beetle", "A Spider", "A Rock",
+                        "A Movie", "A Storey", "A Rainbow"
 ];
 
 // Wrap variables in named object to avoid global scope.
