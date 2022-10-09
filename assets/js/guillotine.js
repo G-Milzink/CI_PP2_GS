@@ -8,6 +8,16 @@ const WORDS = ["ABSOLUTE",
                 "RESTAURANT", 
                 "DOLPHIN", 
                 "AMENITIES",
+                "APRICOT",
+                "MOUNTAIN",
+                "PINEAPPLE",
+                "REINDEER",
+                "PROFESSIONAL",
+                "VARIABLE",
+                "CONSTANT",
+                "INTERFACE",
+                "FEATURE",
+                "ALIBI",
                 "RAINFOREST"];
 
 // Wrap variables in named object to avoid global scope.
