@@ -68,7 +68,7 @@ footer {
 }
 
 #rps-outcome-display {
-    min-width: 100px;
+    width: 110px;
     margin: 10px auto 10px auto;
 
     font-size: 200%;
@@ -414,14 +414,14 @@ screen and (max-height: 750px) {
     }
 
     #rps-outcome-display {
-        font-size: 100%;
-        width: fit-content;
+        font-size: 80%;
+        min-width: fit-content;
     }
 
     .rps-selection {
-        width: 60px;
-        height: 60px;
-        font-size: 50%;
+        width: 70px;
+        height: 40px;
+        font-size: 75%;
     }
 
     #rps-win-start-lose {
