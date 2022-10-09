@@ -76,6 +76,7 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
 
 /**
  * Select riddle according to randomized list and remove current selection from list
+ * Show message if all riddles have been shown 
  */
  function riddleSelection(){
     document.getElementById("riddle-display").style.color = "#BABB9F";

@@ -16,7 +16,8 @@ body {
     text-align: center;
 }
 
-header, footer {
+header,
+footer {
     background-color: #BABB9F;
     height: 110px;
     width: 100vw;
@@ -232,7 +233,7 @@ footer {
     background-size: cover;
 }
 
-#answer-display{
+#answer-display {
     margin-top: 5px;
     font-size: 80%;
 }
@@ -241,7 +242,7 @@ footer {
     width: 40vw;
     min-width: 280px;
     margin: 5px auto 0 auto;
-    
+
 }
 
 .keys {
@@ -353,7 +354,8 @@ footer {
     margin: auto;
 }
 
-input, textarea {
+input,
+textarea {
     min-width: 300px;
     width: 20%;
     border: 3px solid #4A4A4A;
@@ -379,128 +381,160 @@ input, textarea {
 }
 
 /* RESPONSIVE DESIGN */
-    @media screen and (max-width: 500px), screen and (max-height: 750px)  {
-        /* header/footer */
-        header, footer {
-            height: 60px;
-            width: 100%;
-        }
-        .header-link {
-            width: 100px;
-            height: 50px;
-            margin-top: 5px;
-        }
-        #footer-form-link {
-            width: 60px;
-            height: 60px;
-        }
-        #greeting {
-            
-            width: 80vw;
-            font-size: 200%;
-        }
-        /* rock paper scissors */
-        #rps-heading {
-            font-size: 180%;
-        }
-        #rps-outcome-display {
-            font-size: 100%;
-            width: fit-content;
-        }
-        .rps-selection {
-            width: 60px;
-            height: 60px;
-            font-size: 50%;
-        }
-        #rps-win-start-lose {
-            font-size: 80%;
-        }
-        #rps-losses {
-            margin-left: 15px;
-        }
-        #rps-wins {
-            margin-right: 15px;
-        }
-        /* quizzit */
-        #quizzit-heading {
-            font-size: 180%;
-        }
-        #riddle-display {
-            font-size: 170%;
-            max-width: 80%;
-            min-height: 240px;
-            margin-left: auto;
-            margin-right: auto;
-            height: fit-content;
-        }
-        #score-section {
-            font-size: 80%;
-        }
-        #quizzit-wrong {
-            margin-left: 5px;
-        }
-        #quizzit-correct {
-            margin-right: 25px;
-        }
-        #answer-submit-button {
-            width: fit-content;
-            margin-left: 15px;
-        }
-        img {
-            vertical-align:bottom;
-        }
-        /* guillotine */
-        #guillotine-heading {
-            font-size: 180%;
-        }
-        
-        #guillotine-display {
-            width: 220px;
-            height: 220px;
-            margin: 0 auto 0 auto;
-        }
-        #guillotine-win-new-lose {
-            font-size: 80%;
-        }
-        #guillotine-losses {
-            margin-left: 25px;
-        }
-        #guillotine-wins {
-            margin-right: 25px;
-        }
-        #new-word {
-            width: fit-content;
-            margin-left: 15px;
-        }
-        .keys {
-            width: 25px;
-            height: 25px;
-            margin: 2.5px;
-        }
-        /* contact */
-        #contact-wrapper {
-            font-size: 170%;
-            margin: 5px auto;
-        }
+@media screen and (max-width: 500px),
+screen and (max-height: 750px) {
+
+    /* header/footer */
+    header,
+    footer {
+        height: 60px;
+        width: 100%;
     }
 
-
-    @media screen and (min-height: 800px){
-        .spacer {
-            height: 2.5vh;
-        }
-    }
-    @media screen and (min-height: 840px){
-        .spacer {
-            height: 7.5vh;
-        }
+    .header-link {
+        width: 100px;
+        height: 50px;
+        margin-top: 5px;
     }
 
-    @media screen and (max-height: 540px) {
-        * {
-            overflow-y: scroll;
-        }
-        #rps-game-area, #quizzit-game-area, #contact-wrapper, #guillotine-game-area {
-            margin-bottom: 65px;
-        }
+    #footer-form-link {
+        width: 60px;
+        height: 60px;
     }
+
+    #greeting {
+
+        width: 80vw;
+        font-size: 200%;
+    }
+
+    /* rock paper scissors */
+    #rps-heading {
+        font-size: 180%;
+    }
+
+    #rps-outcome-display {
+        font-size: 100%;
+        width: fit-content;
+    }
+
+    .rps-selection {
+        width: 60px;
+        height: 60px;
+        font-size: 50%;
+    }
+
+    #rps-win-start-lose {
+        font-size: 80%;
+    }
+
+    #rps-losses {
+        margin-left: 15px;
+    }
+
+    #rps-wins {
+        margin-right: 15px;
+    }
+
+    /* quizzit */
+    #quizzit-heading {
+        font-size: 180%;
+    }
+
+    #riddle-display {
+        font-size: 170%;
+        max-width: 80%;
+        min-height: 240px;
+        margin-left: auto;
+        margin-right: auto;
+        height: fit-content;
+    }
+
+    #score-section {
+        font-size: 80%;
+    }
+
+    #quizzit-wrong {
+        margin-left: 5px;
+    }
+
+    #quizzit-correct {
+        margin-right: 25px;
+    }
+
+    #answer-submit-button {
+        width: fit-content;
+        margin-left: 15px;
+    }
+
+    img {
+        vertical-align: bottom;
+    }
+
+    /* guillotine */
+    #guillotine-heading {
+        font-size: 180%;
+    }
+
+    #guillotine-display {
+        width: 220px;
+        height: 220px;
+        margin: 0 auto 0 auto;
+    }
+
+    #guillotine-win-new-lose {
+        font-size: 80%;
+    }
+
+    #guillotine-losses {
+        margin-left: 25px;
+    }
+
+    #guillotine-wins {
+        margin-right: 25px;
+    }
+
+    #new-word {
+        width: fit-content;
+        margin-left: 15px;
+    }
+
+    .keys {
+        width: 25px;
+        height: 25px;
+        margin: 2.5px;
+    }
+
+    /* contact */
+    #contact-wrapper {
+        font-size: 170%;
+        margin: 5px auto;
+    }
+}
+
+/* adjust invisible spacer for larger screen heights */
+@media screen and (min-height: 800px) {
+    .spacer {
+        height: 2.5vh;
+    }
+}
+
+@media screen and (min-height: 840px) {
+    .spacer {
+        height: 7.5vh;
+    }
+}
+
+/* allow vertical scrolling on lower screen heights and create white space to go behind footer */
+@media screen and (max-height: 540px) {
+    * {
+        overflow-y: scroll;
+    }
+
+    #rps-game-area,
+    #quizzit-game-area,
+    #contact-wrapper,
+    #guillotine-game-area {
+        margin-bottom: 65px;
+    }
+}
