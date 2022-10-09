@@ -158,7 +158,7 @@ footer {
 }
 
 #riddle-display {
-    font-size: 200%;
+    font-size: 190%;
     max-width: 50%;
     min-height: 280px;
     margin-left: auto;
@@ -438,7 +438,7 @@ screen and (max-height: 750px) {
 
     /* quizzit */
     #quizzit-heading {
-        font-size: 180%;
+        font-size: 160%;
     }
 
     #riddle-display {

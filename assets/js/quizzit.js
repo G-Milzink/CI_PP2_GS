@@ -93,6 +93,7 @@ document.getElementById("answer-submit-button").addEventListener("click",submitA
     quizzitGlobalVariables.ANSWERED = false;
     quizzitGlobalVariables.ALLOW_SELECT = true;
     if (quizzitGlobalVariables.ALL_RIDDLES_ANSWERED === true){
+        quizzitGlobalVariables.ALL_RIDDLES_ANSWERED = false;
         quizzitGlobalVariables.SCORE = 0;
         quizzitGlobalVariables.WRONG = 0;
         document.getElementById("quizzit-correct").textContent = "Correct: " + quizzitGlobalVariables.SCORE;
