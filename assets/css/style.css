@@ -183,7 +183,7 @@ footer {
 
 #score-section {
     width: 340px;
-    margin: auto;
+    margin: 0 auto 0 auto;
 }
 
 #quizzit-correct {
@@ -202,7 +202,7 @@ footer {
     color: #4A4A4A;
     border: 3px solid #4A4A4A;
     border-radius: 3px;
-    margin: 10px;
+    margin: 10px 0px;
 }
 
 #answer-submit-button:active {
